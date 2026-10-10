@@ -1,0 +1,5194 @@
+{
+  "files": [
+    {
+      "source": "output/awpl/revision19_metal_xy/data/direct_fourier.mat",
+      "target": "output/awpl/revision19_metal_xy/data/direct_fourier.npz",
+      "original_sha256": "c64a33aa72176cd8d8d3c618457e79f2054151ede785a3c613d5ef5ac201fb49",
+      "converted_sha256": "707225544afb8e349ca712748ff08093025c5a92cca6f46278a0ac086f838ceb",
+      "variables": [
+        "rows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision19_metal_xy/data/protocol.mat",
+      "target": "output/awpl/revision19_metal_xy/data/protocol.npz",
+      "original_sha256": "31583da84bb0c0ad46204d4bcafd5cb080a457500c31072f4b7c98f50ffdd544",
+      "converted_sha256": "6d4df9ec87fe09de1f93c8f429043f935711d09f4a535fd68e4f64d29032a698",
+      "variables": [
+        "M",
+        "N",
+        "Q",
+        "angles",
+        "chosen",
+        "freq",
+        "masks",
+        "phi"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision19_metal_xy/data/validation.mat",
+      "target": "output/awpl/revision19_metal_xy/data/validation.npz",
+      "original_sha256": "d23ded5b6c06d0eba834b1c0ec6ce9413321984adfc1e997375bed074295bfcf",
+      "converted_sha256": "b97e27f2306ec429e44ecc79f1a37028ecae0b3934a0ee8a2fa5e91328111a35",
+      "variables": [
+        "checks",
+        "chosen",
+        "convergence",
+        "identityRows",
+        "masks",
+        "rows",
+        "sheetRows",
+        "slopes",
+        "spectra",
+        "sweep"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/coarse_bridge_t701_f7_a0_N24_Q192_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/coarse_bridge_t701_f7_a0_N24_Q192_M1.npz",
+      "original_sha256": "fcb3849a6df90c0363783e3d7972c140faf39d993b2aa4bac843178d7d4a07b5",
+      "converted_sha256": "8c384d7fb9f3120cfc6d7b426ad0cac4095213e7fe69c4f4ed2a9875c434dced",
+      "variables": [
+        "S",
+        "info",
+        "mask",
+        "ti"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/coarse_bridge_t702_f7_a0_N24_Q192_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/coarse_bridge_t702_f7_a0_N24_Q192_M1.npz",
+      "original_sha256": "f305004c0598b1b669648aa45930426551c22ca58e1e5ba608a4e1601262869f",
+      "converted_sha256": "831d87340ae9b349b276dd8f8f597e8b25969d9a310f5811309a6a35a894c9dc",
+      "variables": [
+        "S",
+        "info",
+        "mask",
+        "ti"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/fine_fields_t701_f7_a0_N80_Q640.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/fine_fields_t701_f7_a0_N80_Q640.npz",
+      "original_sha256": "21eb25bed483469e029a7124ef63637789eab28a79887264425ca56eed706e88",
+      "converted_sha256": "ab1855f8518180b18f42740fda9f19a7e27a1d7cf805369e8abe890c69204dbf",
+      "variables": [
+        "N",
+        "Qfield",
+        "Qsolve",
+        "delta",
+        "emag",
+        "ex",
+        "ey",
+        "ez",
+        "frequency_GHz",
+        "gsmCheck",
+        "incident_amplitude_V_per_m",
+        "jmag",
+        "jx",
+        "jy",
+        "mask",
+        "p",
+        "topology",
+        "x_mm",
+        "y_mm",
+        "z_mm"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/fine_fields_t701_f7_a0_N96_Q768.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/fine_fields_t701_f7_a0_N96_Q768.npz",
+      "original_sha256": "58237880fb6a7516b90274c16b2604d4c2879c8cbf28bf4ae77984de47b28405",
+      "converted_sha256": "2076c5078cf1948b4a8e1a7c3bd02c6b0e4987601f2b6eda828fca24f0d31617",
+      "variables": [
+        "N",
+        "Qfield",
+        "Qsolve",
+        "delta",
+        "emag",
+        "ex",
+        "ey",
+        "ez",
+        "frequency_GHz",
+        "gsmCheck",
+        "incident_amplitude_V_per_m",
+        "jmag",
+        "jx",
+        "jy",
+        "mask",
+        "p",
+        "topology",
+        "x_mm",
+        "y_mm",
+        "z_mm"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/fundamental_t701_f7_a40_N96_Q576_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/fundamental_t701_f7_a40_N96_Q576_M1.npz",
+      "original_sha256": "8bcdf655aa0679630da7f807af3eb29605d7f5da6562fdd8244f556dc1f85962",
+      "converted_sha256": "84e2f562cc24f648acc79393d33344cd3965143e0510106c13a3b7946b6b1bb3",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/fundamental_t701_f7_a40_N96_Q768_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/fundamental_t701_f7_a40_N96_Q768_M1.npz",
+      "original_sha256": "ab652c9ce0813bf293db02f93e34f838879b6f31d04c2acb320c406cb2eb1b28",
+      "converted_sha256": "6f3d0cf1e94f040c448a1917001034eca6067caa9d0e6b5b840c046caed8fbb4",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/fundamental_t702_f7_a40_N96_Q576_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/fundamental_t702_f7_a40_N96_Q576_M1.npz",
+      "original_sha256": "a92b1ebdcdd0d827a7fb3a1e65ca34b055a3897042dc1f378f1d6810ab2ea2a2",
+      "converted_sha256": "894146f4cff6d1b4b4373ba9ce563a292aed25db9efda6214490a7e7381ec4cd",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/fundamental_t702_f7_a40_N96_Q768_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/fundamental_t702_f7_a40_N96_Q768_M1.npz",
+      "original_sha256": "3f80191e517cccf8e207d38c425f97bc6a8db0454e853408c530dd06dbbf3a48",
+      "converted_sha256": "723e4dc46dc1f8758f642c09e12825ffa55c0a9a7514758388437b00c0d43481",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/mixed_precision_validation.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/mixed_precision_validation.npz",
+      "original_sha256": "3396734a0f239d1b132ee31b2eda9f69d7b7a3cad9c6fd9dea420b0a0d53dfc6",
+      "converted_sha256": "e50e8f08721e67e18a262dbb46b55a3e97aabc7943def64af883c77d635932c2",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "currentError",
+        "gsmError",
+        "info",
+        "mask"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f5_a0_N48_Q288_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f5_a0_N48_Q288_M1.npz",
+      "original_sha256": "f0f9ead8b2688e65cee854da645ff041bdc910615b11113a3004aa683c7cfc5d",
+      "converted_sha256": "080d814f604425d00bd128d6375a74a446d9ec3d5b3dbfe69071cbe2647abf0a",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f5_a0_N48_Q384_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f5_a0_N48_Q384_M1.npz",
+      "original_sha256": "a037f78b75a1f111301fc28c8a9d7d6e3d5efe40e96d75567160de7bd2fdc51f",
+      "converted_sha256": "2fed0d8d65065edc946dd791d4154bb58a37ba1da853c86b49f977ba07c03b6a",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f5_a0_N64_Q384_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f5_a0_N64_Q384_M1.npz",
+      "original_sha256": "348d44a88592efde62181ec59d02606b5a8239e9850537ab6a39202b42977d67",
+      "converted_sha256": "5980eafa42b84029aa9088b9c6274ac9bd53f13e14a220b5b58a3c4fb3888b25",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f5_a0_N64_Q512_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f5_a0_N64_Q512_M1.npz",
+      "original_sha256": "ba0d9ae5ff1aaa6d18810fd09ae9ec07755bb9e8b41bc57e88042bf6cdae2653",
+      "converted_sha256": "9655b48be118a55534ec7cd6300711abd966b225c54c557be3d8b15e4ed1ff98",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f5_a0_N80_Q480_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f5_a0_N80_Q480_M1.npz",
+      "original_sha256": "311957d1068a615437a626b2a83a2f2b513e7ccd82516c3f8f0bf95a28d0dc8f",
+      "converted_sha256": "d170f3db8e96b81eedad921c099015c9ad17fde04c9af35038bfa7463b66bf0a",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f5_a0_N80_Q640_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f5_a0_N80_Q640_M1.npz",
+      "original_sha256": "f164336eca8a832c2bf8b6d645a64e0199fe1e44c7c43f2ef33e4a764e717c3b",
+      "converted_sha256": "714f66de8ec423a5b191b99f89f5d968a42f604c7d383534b37dba53066b44b6",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f5_a20_N48_Q288_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f5_a20_N48_Q288_M1.npz",
+      "original_sha256": "5503e5f8cb0992692f0406564cbfe5f9e95f3482e32c2bcb38c55400c66aa092",
+      "converted_sha256": "b060985b2df0cf41427893e1a184a54b876b6d927e0f9ddc0e3a849c22be0d4a",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f5_a20_N48_Q384_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f5_a20_N48_Q384_M1.npz",
+      "original_sha256": "3b9fb949254079379d8100f64e0b1eefd3b9fd87d4fd3bc5610ec65162344793",
+      "converted_sha256": "80392c9187532e743427796fe17e529a2156a7baed317da8e4fd92e85094654e",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f5_a20_N64_Q384_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f5_a20_N64_Q384_M1.npz",
+      "original_sha256": "4117e37b974f2d6bf9a1946dc68d7547765dc15e14dcb9d2490b0e51eb44d8e0",
+      "converted_sha256": "6493eeeb1fbba37b19db0cf745ff47d5b232d05903be38033c8d32bb7566b83c",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f5_a20_N64_Q512_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f5_a20_N64_Q512_M1.npz",
+      "original_sha256": "28afc439fa1ee568f48eb43afaa3ab31ffedb58509ac1df58725d5e2e31eecd3",
+      "converted_sha256": "a7b9bf973a80741cc97e8972138e92f739ae1074b529eb0c8600beff8445338c",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f5_a20_N80_Q480_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f5_a20_N80_Q480_M1.npz",
+      "original_sha256": "c1549418c0ea5e0cd59701239692429ddda7f44c7f0dacec0a564641a129a582",
+      "converted_sha256": "aaa9bd654d8d2ca0c6400dccc5ed052491e48c307af486fb4d90219856fcbac3",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f5_a20_N80_Q640_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f5_a20_N80_Q640_M1.npz",
+      "original_sha256": "0d5b06cc01eba9ce15b9f99ec9e6835efe2bc654997307d8aad353ecae969473",
+      "converted_sha256": "a8819188ac9abdde1bcab34d2f572ad0dd004b84ec3b53692a2fed1849df20aa",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f5_a40_N48_Q288_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f5_a40_N48_Q288_M1.npz",
+      "original_sha256": "9dc8bb7f39216e72fe8a0656d02259334cac2462a5d1ed2940a43bcabcf98f79",
+      "converted_sha256": "7abfcb3ec69a9a9492e9b500915d70470c099d5c0fce0adc5b73878362776dc4",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f5_a40_N48_Q384_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f5_a40_N48_Q384_M1.npz",
+      "original_sha256": "fd9f9a94d47d19a65af9b9a0e2c2a2d69a87f5c5ef2d2306b259732d76bbe6fa",
+      "converted_sha256": "7d4885ad9aaef0f73c922e8c32fc595732aeb132d3bade84b254becc457b53ee",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f5_a40_N64_Q384_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f5_a40_N64_Q384_M1.npz",
+      "original_sha256": "7c8f2a2fdcba482a6ecbf37bb3c037b72ed4fbe5cf36a6c323ba2c0a66587dd8",
+      "converted_sha256": "cad9e6bea7821161afca55746bad7bb83f3af40779af8d9e0fc9c3fb40424f5c",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f5_a40_N64_Q512_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f5_a40_N64_Q512_M1.npz",
+      "original_sha256": "8df091ce5cfb0f168c554a85d834f2ee4abb2ec632d465c879fbe43df0aef72e",
+      "converted_sha256": "8bb51966e3b5f9782c2a9a0531d83e7cfe1e1dbbb536066fa5400750916c3b0d",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f5_a40_N80_Q480_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f5_a40_N80_Q480_M1.npz",
+      "original_sha256": "895fc7ac33b5f42b4e53c2f8e8620f9c8ab4db3d9fef476e7bd3072455e8e563",
+      "converted_sha256": "8619b454b61d456e503f58d97ee7f66d64d50a1877a1dc75df9fec759d478183",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f5_a40_N80_Q640_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f5_a40_N80_Q640_M1.npz",
+      "original_sha256": "4b167224f53c5e2aa046fbba6d03c36b05b6627c0079adbb575369c61454b76b",
+      "converted_sha256": "a7fa47e15d24b26301c473152a11486d4698fdfb58cb26b84ffe913ffc285dcf",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f7_a0_N48_Q288_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f7_a0_N48_Q288_M1.npz",
+      "original_sha256": "62725b45376abedece8a16e733cdcca3e7535783131f3f9464348127951eaef9",
+      "converted_sha256": "255214fa7afccecf1af4dd042600387aa1c5f5db310ece52cf734545f8f9f601",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f7_a0_N48_Q384_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f7_a0_N48_Q384_M1.npz",
+      "original_sha256": "2af78c50802849486bdaba7d83da02ba990dcd3b6cc0d0f41e83ef18bb1a5be6",
+      "converted_sha256": "59d08b40c386181d91a6d3f2cfd1f20dc7011b6dbe158e8de9f5b5622f1e6db0",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f7_a0_N64_Q384_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f7_a0_N64_Q384_M1.npz",
+      "original_sha256": "1eed8244cc81bb1e4f42efe901bac9b5a68073da741936029cd5e66383463923",
+      "converted_sha256": "d42275921eb9e6c22bae909d71b3162633474e1e1def4f53f24dc37ef4948b0a",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f7_a0_N64_Q512_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f7_a0_N64_Q512_M1.npz",
+      "original_sha256": "8907ab80c99de629e9dd09b22e73514385a386a4df602c3ca8147323f23336f3",
+      "converted_sha256": "159075237d30bf85cb8b7cbc086e55b407ca91b2740d4b48a638dae2bff02e00",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f7_a0_N80_Q480_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f7_a0_N80_Q480_M1.npz",
+      "original_sha256": "91f3f31475cce7b514f230f545e7f79c3934faad66ad3c99327686e02406d8da",
+      "converted_sha256": "faaea7d41e492283cb37d92784fdc65954e238f9c779e2a69502823a35fede0d",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f7_a0_N80_Q640_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f7_a0_N80_Q640_M1.npz",
+      "original_sha256": "893bee82660d79cd132a7c01c0659b3ee0cb9e5d831956f55936674ac8b06f78",
+      "converted_sha256": "63f20889852ed25e2f0107b4d24debe969a8383804fb54e97e787b0d59871f5a",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f7_a0_N96_Q576_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f7_a0_N96_Q576_M1.npz",
+      "original_sha256": "c005d33254f43e96c1ca1ed3e649887a2066f903545d2a7b49613a3c3bb983ce",
+      "converted_sha256": "15275fc870ac60ea5edefff75ffcd08ee4029672fb68925829b63e82fb723b44",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f7_a0_N96_Q768_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f7_a0_N96_Q768_M1.npz",
+      "original_sha256": "67e9e753e3d73ef9d3ef68d05d9de5586c08d78d88e8615a319a380cb56edf94",
+      "converted_sha256": "f7473438e423d9a341bc2fb7c02fcc5e5b07ba3a4402e8b2aea07fbacbc2a536",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f7_a20_N48_Q288_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f7_a20_N48_Q288_M1.npz",
+      "original_sha256": "8e0224842a253c9bc980acca4272ca08566ceeac12fad7766631f6bc136342bd",
+      "converted_sha256": "bebde9c870a360c7831ff6534fa2e9b2acdcc500d0755f471150d6f9921b9551",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f7_a20_N48_Q384_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f7_a20_N48_Q384_M1.npz",
+      "original_sha256": "b03123b1682ff15197ba856f7484a30e0069ed849d52f521fbda73048d93e827",
+      "converted_sha256": "04792fbd55275b7116b8f7948a2dcd0595844e87198fab2c8da8d27f59c780ea",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f7_a20_N64_Q384_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f7_a20_N64_Q384_M1.npz",
+      "original_sha256": "6173cb65d7a3489b1dd4605528becfa42fbf6d3160f5b967d734b62d6dd11ae0",
+      "converted_sha256": "e4558d5b02dd443979886d75bc02ec500be03a53e8a121d9bc5b80566aa12a55",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f7_a20_N64_Q512_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f7_a20_N64_Q512_M1.npz",
+      "original_sha256": "4052f6141b947ad6944a66ee1b22afc5d83c53d9f3822d01d624a4bfeee7f652",
+      "converted_sha256": "ec470e9b6a297f63f06e1faa72ba46b911f1c8e4d55bc5d64c0259d6d8fb5428",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f7_a20_N80_Q480_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f7_a20_N80_Q480_M1.npz",
+      "original_sha256": "14d7edee52b84863dc36f2193fa2e517fb715c4f7f6571365d828aadaad32514",
+      "converted_sha256": "3df74d304ac1fbb304b201ce3d5d931f8ae66dc12ffbfbe3370ad3a33fb142b8",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f7_a20_N80_Q640_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f7_a20_N80_Q640_M1.npz",
+      "original_sha256": "449e7648501e7a61af43e9a40c2c9ae2ce9446cd95547833b215161735b8c0ad",
+      "converted_sha256": "b543bb273788127add1d5054f7b8a8370f246d1fdc24a166a138af51cd8cd307",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f7_a40_N48_Q288_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f7_a40_N48_Q288_M1.npz",
+      "original_sha256": "c25a517454a02dbc78de8d168068d367472339d8bf55b3b1a0f4157a82182f63",
+      "converted_sha256": "10a6481f87f69a8357b44cfe3eb8785126e7af3abaf3e6846c797214e92dcc30",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f7_a40_N48_Q384_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f7_a40_N48_Q384_M1.npz",
+      "original_sha256": "b1e54067c0d4153f3340cd530acd7efe045166167f7bbbb0f6dba0f1a3df66af",
+      "converted_sha256": "be3180707d7162c42312b72990cb206f4951b17b11dbfab73dcb3460f9553371",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f7_a40_N64_Q384_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f7_a40_N64_Q384_M1.npz",
+      "original_sha256": "999aa152942856306b9b232098392c960f70bc01f07c608d27c7f4722e4f373f",
+      "converted_sha256": "8726f02aad9e008b720936493b0451253fbd4347793c85054f7a0add89a633c2",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f7_a40_N64_Q512_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f7_a40_N64_Q512_M1.npz",
+      "original_sha256": "090adba049b67c535aac5f37df627f17d8d7e4780e7166e79baf7a0de6e98b48",
+      "converted_sha256": "12566afb1533c04df94bf7b9c185136e56da44cbd126959f35054cf11a5fc239",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f7_a40_N80_Q480_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f7_a40_N80_Q480_M1.npz",
+      "original_sha256": "a47b6e2d37963d60ba3d6f160b0e7f79c1a036f93aa987212a3eea8da922b079",
+      "converted_sha256": "c28236aa568ab4cb6b59cb936095711fd2d91105fed9850e3f8cb7a42109dd48",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f7_a40_N80_Q640_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f7_a40_N80_Q640_M1.npz",
+      "original_sha256": "0feec354f93c5afad3d04db8ee5936560d821435530aa8c97101388b39b4c7f0",
+      "converted_sha256": "19ec70657fa083cfec6e246c3b118b5d5d16146dfd988c1b911c8888f83ad1d1",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f9_a0_N48_Q288_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f9_a0_N48_Q288_M1.npz",
+      "original_sha256": "eb5ca9b6562aa8c9465c4022179882ada6c2bedf66c16df2190d73076039a3e9",
+      "converted_sha256": "3c7d7b9b135ed48960d445b71065898db8e39a7b318f7ea3cf6c1a5b6e3001d7",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f9_a0_N48_Q384_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f9_a0_N48_Q384_M1.npz",
+      "original_sha256": "2eeef42d865c09b2cb958ab88f9bb02d060a18142f2e93a64c867488e23f4c89",
+      "converted_sha256": "67e15c44d7d1ffc3bdf890433dd99ccc5578b88b7a28c3e47a5b08153eb10bd2",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f9_a0_N64_Q384_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f9_a0_N64_Q384_M1.npz",
+      "original_sha256": "d4f11a51c15b7bc0898099bc7502853046e54f88fcadf462579b4442f1fb7383",
+      "converted_sha256": "92c0da9d58984172c9f6b8d951ebe39a043618e0966a9e2272d6ac857f2e743d",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f9_a0_N64_Q512_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f9_a0_N64_Q512_M1.npz",
+      "original_sha256": "3378d2d33ac012bf547c256e918de0dfab411d843a2d4dc698957e1785dd21e6",
+      "converted_sha256": "a61b10f135072fa453e9e3d8679168078e5b5de8abc7dcac874504e4127b54d9",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f9_a0_N80_Q480_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f9_a0_N80_Q480_M1.npz",
+      "original_sha256": "df22e8400591ee9fd2491629a3c713f7f8e236795108dfa7c85d80ce6443a2ab",
+      "converted_sha256": "a174259d09d071177f20f301a657eea0331fa0aa85a75d68a392ad0a9c597e53",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f9_a0_N80_Q640_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f9_a0_N80_Q640_M1.npz",
+      "original_sha256": "adadc7c2303ca3236c689102baedcd4e2ebfadcb835c107bb970b877deab9965",
+      "converted_sha256": "9ae75b5e99c3eccb58ea39e8e50f861b49b0cc3e377b79e1283cba380af15a7a",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f9_a20_N48_Q288_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f9_a20_N48_Q288_M1.npz",
+      "original_sha256": "6596ad0bfe2302ed78e4fc70a58d3dce1b724a45ecd255d687d60bff025c4ba2",
+      "converted_sha256": "993e6a19961c8671a107eaf981b90c050cb6c7b5eb4d5e5960c6740f85e1d9bd",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f9_a20_N48_Q384_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f9_a20_N48_Q384_M1.npz",
+      "original_sha256": "826e9893ee40521f66d526ce066a845b63af30dc9efdcc614989f5b41c72d8d8",
+      "converted_sha256": "6c7b293012f7581673d809f6782c1b1f51eab999ed2cfba6b8829df2435dcfb2",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f9_a20_N64_Q384_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f9_a20_N64_Q384_M1.npz",
+      "original_sha256": "2fe523dc7bc75561685ad0c472b5a6be49bd730104c09037aa7d9548daf660eb",
+      "converted_sha256": "e00ee2fc7ca53e34088f7b8687496e1053a9b62c580b8cc9f82e581190f2b617",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f9_a20_N64_Q512_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f9_a20_N64_Q512_M1.npz",
+      "original_sha256": "dd748cfd9950ef0d192d1dd93ef27f7507d210d1d418434f69164604716d7b98",
+      "converted_sha256": "f01668a3fbd3600d5f5e6be91bf031a55b1eb0ca0cd251ecdf618a135238366e",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f9_a20_N80_Q480_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f9_a20_N80_Q480_M1.npz",
+      "original_sha256": "89f9d09a3278042a5aae9841bdf029722c046d8e959558f65c28e0fbd3669dff",
+      "converted_sha256": "0ea6a96f1253287a54b5623ebe1f240fdcfd4d72d48098d7f510c77390094352",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f9_a20_N80_Q640_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f9_a20_N80_Q640_M1.npz",
+      "original_sha256": "e24c8c59b47220862bc11ab7f3e53189da793e411d97ed5e6c094f7d248e2f60",
+      "converted_sha256": "6b838739229f38d376113da2aaa9370128b9e654e00777201ace61bd57eff5e5",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f9_a40_N48_Q288_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f9_a40_N48_Q288_M1.npz",
+      "original_sha256": "ba2d8e30d7e068af2f6a5e3b11bf19eb13bfa471c6ed3cf185917e62a5a99f28",
+      "converted_sha256": "8a0f0dba9a0c11fb7c22226a2bf78f30be3f8deb454419945fcabdf8787de21e",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f9_a40_N48_Q384_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f9_a40_N48_Q384_M1.npz",
+      "original_sha256": "c05b5e58fe0a78d61c89e0e88b85fa934c131a4ec1d4783f38aba0e83d7e5d30",
+      "converted_sha256": "5320221d6a7d1a297886420e2a6cff7f50d8e254c3957f91169c1eae5e9063cf",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f9_a40_N64_Q384_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f9_a40_N64_Q384_M1.npz",
+      "original_sha256": "a0134decf4f78f2c7140acf984f71a60f6b9f03096b7310832899aef973b8cb0",
+      "converted_sha256": "1e973f315a95529b6c3d7cf3bebc33d4f8af8e38112e4bfce47ed73a2dcb772b",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f9_a40_N64_Q512_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f9_a40_N64_Q512_M1.npz",
+      "original_sha256": "de3d5c2773367922ed4454cdd83b90f3d6fa3003363089fa4d23d1295e7d0fe5",
+      "converted_sha256": "43b9846e4933ed9767e49326d3c2214d66a841df117b5c4432a2627ad98f40e5",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f9_a40_N80_Q480_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f9_a40_N80_Q480_M1.npz",
+      "original_sha256": "52ff96c86b402e5f53973665cd4ee88745a6f49fa30ca0ecc2e8e82f30cf00f2",
+      "converted_sha256": "331218ed7a6edd96df2f29b3f8ac8db211223f5b9969a8cf7ef0ed94f1bca24a",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f9_a40_N80_Q640_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t701_f9_a40_N80_Q640_M1.npz",
+      "original_sha256": "fe00f55a50a6ee3e9307397e1a238a11e31b15ca0ac3b4e2694eeeb63f0054fc",
+      "converted_sha256": "984b64b2aaff725f219656dc490a80fee534810df273ff2560ad7263e7eec81a",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f5_a0_N48_Q288_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f5_a0_N48_Q288_M1.npz",
+      "original_sha256": "3c3b809397edb4de651dc8c385fe9acb70806ec6be06c223e1af22d8db3b09e4",
+      "converted_sha256": "dfdd696e5b96bb560f13655dc528f9eb81ab606366d6174205566e74d3b2e4c5",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f5_a0_N48_Q384_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f5_a0_N48_Q384_M1.npz",
+      "original_sha256": "85b0f531087fd3d8a132d72cf7acc484316bdabbfde5fe9fc0ad825c1332dde9",
+      "converted_sha256": "e63dc2d7c598805f12b543ade1aa8f464ce48df21b642c10f62cb4ad5c59779b",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f5_a0_N64_Q384_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f5_a0_N64_Q384_M1.npz",
+      "original_sha256": "7b4513f973052b7352ced9c4507344bf65d8a76c60c1acfe42a16d771cab9d71",
+      "converted_sha256": "4de9bebfacd8fb7562d67800f41104d1b7e0d4e1e0d758aaccc370d69f3255aa",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f5_a0_N64_Q512_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f5_a0_N64_Q512_M1.npz",
+      "original_sha256": "67bf9fc5399e54ee1dbe37ea65116c63cbc422be75e004c4520ed0c31db844f6",
+      "converted_sha256": "b0884068d54adf31fc990b146861f87aed81662f8d01a027d120aa4fe4fbeeee",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f5_a0_N80_Q480_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f5_a0_N80_Q480_M1.npz",
+      "original_sha256": "18213db115508697e4838af6c43246ba22371b0c24c9d4daf2e2eeaa92882b5d",
+      "converted_sha256": "c1769bb3fdd02593dfb1105851523a658bf24b88dfc068206973931d8c254cfa",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f5_a0_N80_Q640_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f5_a0_N80_Q640_M1.npz",
+      "original_sha256": "beb9243713976063e87b55da5675b4da7f05f71ba5b947c8d7e163b413dcc3e6",
+      "converted_sha256": "0006075eaf641c2643141c585146ecac258a62a1e971e09d99bd88c73b236f8f",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f5_a20_N48_Q288_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f5_a20_N48_Q288_M1.npz",
+      "original_sha256": "0c1293c9a856e5082eb43d449a6a65ba62955ae9c24050953ae6927b0bc05b2a",
+      "converted_sha256": "63b01af56b39e947cc962be0b3754ea7df952af72532d6694232f7d88b7e52a8",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f5_a20_N48_Q384_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f5_a20_N48_Q384_M1.npz",
+      "original_sha256": "d41147a40f2a22bde1d6fc3647696962cc02a99254f6816cb8521f0375d211aa",
+      "converted_sha256": "3147d161171f79aa5bee4a8f22923a3969d1bc5ee2c8dba64823a930eb215ea6",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f5_a20_N64_Q384_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f5_a20_N64_Q384_M1.npz",
+      "original_sha256": "1493402fe724e4f59ca5255f2644d2c89c15b9b6c63711486ea48f47de33d46e",
+      "converted_sha256": "2d70ebbf159b44b5f47852fe3512b9dcf0949b7a772c858e57b0c6ff671a6dd5",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f5_a20_N64_Q512_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f5_a20_N64_Q512_M1.npz",
+      "original_sha256": "60d42730cfdb1a102a29b281e7f0b68f4a088698563a2c89791e96710fb90cac",
+      "converted_sha256": "d4bed8061a890070dcd361771e7ecc05f04c30356ca69142ca81550a68922312",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f5_a20_N80_Q480_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f5_a20_N80_Q480_M1.npz",
+      "original_sha256": "d53dc677a6b74192a6be802b31acc4f3c047b6969fa1a6915fefae586f719f3c",
+      "converted_sha256": "28712bc22327489e3039fb2283836f14b026d0952ea5ea7f1f06fe886218ed6d",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f5_a20_N80_Q640_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f5_a20_N80_Q640_M1.npz",
+      "original_sha256": "a2233b42106d7e830261e24f3946d96df54641565dd0b0fc6ad14ba0510573f0",
+      "converted_sha256": "68e764b7328d4fea090af99282fe3dda6ff39afcd8365956e208f7e4c92c929e",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f5_a40_N48_Q288_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f5_a40_N48_Q288_M1.npz",
+      "original_sha256": "a3639c7ef8b0c85c163920429ffacd56c67df892dc54f038b551e858bc8d5be6",
+      "converted_sha256": "1539fb3fa9158372efb45cb64d79790195524c5dcca6eec859ba47899d6a9ed9",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f5_a40_N48_Q384_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f5_a40_N48_Q384_M1.npz",
+      "original_sha256": "0c1decca3e013dab0a08b3ba58862486b36bbd5122977761267b423a8a141548",
+      "converted_sha256": "3e293c4a696704f4fcb9a98e807ef08fd02ba948d351b5a25197042e68edd826",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f5_a40_N64_Q384_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f5_a40_N64_Q384_M1.npz",
+      "original_sha256": "23f868922892a086369d3497386abb4d8bdc272cb52005e3a5bd9a81043f992f",
+      "converted_sha256": "59ebc2765968044aa1ade2ff91759e24feba608e683a10e50ee78a700025fa73",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f5_a40_N64_Q512_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f5_a40_N64_Q512_M1.npz",
+      "original_sha256": "6b8bfb660da2a30ca39f21f94aa69caba1079181b9a092bf719857136c5b268b",
+      "converted_sha256": "cf0bb3edf128891b30033e0251a3380766f2c6264cce959b901188637a433917",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f5_a40_N80_Q480_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f5_a40_N80_Q480_M1.npz",
+      "original_sha256": "28b7afb438461328eab65b749929b780664bd1311d36573d3aa4ce1adb20dbc3",
+      "converted_sha256": "dfb887cd917c3c58153dad0e8285337c9efae1dcb2120cd4dd2bd85f150b538e",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f5_a40_N80_Q640_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f5_a40_N80_Q640_M1.npz",
+      "original_sha256": "2542ddb96b4907b5f7f37a0a714b2f37e59ace27995d1a0f38634f1db9864edb",
+      "converted_sha256": "9f5d530286dc7a38616397113126b3fc73f659748ca23f9731884f04cc6e59e8",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f7_a0_N48_Q288_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f7_a0_N48_Q288_M1.npz",
+      "original_sha256": "4307a647cbe35b2c8c888d4a1d3cb1d4bd5ce82d535621b67169733efab6d336",
+      "converted_sha256": "73041c04fb47ad7f65c67a70237eea77fe14d0d751dce36469de25a12814c58a",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f7_a0_N48_Q384_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f7_a0_N48_Q384_M1.npz",
+      "original_sha256": "6c8a0c842663f188324c1bbe8c93ec5dfab78a0c743e9b653a558f73971061fa",
+      "converted_sha256": "76d7f491aca9c224373856123a53e71cffd0a61d5790be24097d86c2e849fa25",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f7_a0_N64_Q384_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f7_a0_N64_Q384_M1.npz",
+      "original_sha256": "e234e8c7330956047fb36e1b0981b110b791511cf615a75b1f04aa18e2739dbe",
+      "converted_sha256": "afdfaa58e5c7f97ad9f3776a1a02a5285fae4c8458431a37201ebb1f8e4b8a86",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f7_a0_N64_Q512_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f7_a0_N64_Q512_M1.npz",
+      "original_sha256": "a5ab4aa6d0f5e4f0c13108c91f44f44cc7765233bcd6588f2bc1e91d01708b83",
+      "converted_sha256": "860f1d0c3323af69acc85510500be243218fac33414ee05f0419edaf11082804",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f7_a0_N80_Q480_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f7_a0_N80_Q480_M1.npz",
+      "original_sha256": "af3525c1d3fe0841a029f5ad6a125ead9f96068986b80911c6e7af5b99129c7f",
+      "converted_sha256": "3151568fb1b478bfd4f52afa567ae147b7f07d0b20ae9ac84e3fc96ffc411c26",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f7_a0_N80_Q640_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f7_a0_N80_Q640_M1.npz",
+      "original_sha256": "dae728a231bd833ef4a047d556360693c39017e49d4df4eefc12d17c7d4fe2c2",
+      "converted_sha256": "ba7b9e8db20e46d8965a3ec4a71c8930bf51b01734ca3c8174c8d0d3a1668b56",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f7_a0_N96_Q576_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f7_a0_N96_Q576_M1.npz",
+      "original_sha256": "f5221483974765812e4eca03834d1387819ac159b07dcdf576c23530fddcf295",
+      "converted_sha256": "538effd9410cfe7194e3f71a8a86838b6bca5d4990e0cbdb31be54e27557706f",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f7_a0_N96_Q768_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f7_a0_N96_Q768_M1.npz",
+      "original_sha256": "b28e5b879df70fe63c67681c448463756f61c92f3fcfe54956587c12eaefe3ca",
+      "converted_sha256": "85d0d78962e49dfea335d98be4f0a2c982c6abc392f96826e1af1ab4b5780ae0",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f7_a20_N48_Q288_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f7_a20_N48_Q288_M1.npz",
+      "original_sha256": "f87d8acaf9e9bf7acac607f9f543681d9c571152aa4394e4f7186288ccb2d853",
+      "converted_sha256": "29d9571c39c4f102b51319608aa674ca2e10e06292bc824e6983df405f0999f2",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f7_a20_N48_Q384_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f7_a20_N48_Q384_M1.npz",
+      "original_sha256": "19eab5ec37573a953cecf591acdc136ba3ffde17cb044487bb34bb5d5cd74cb6",
+      "converted_sha256": "ba9f7224d911c05701db15b0d766ae9ba208464e686aa318867bafa7c314451e",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f7_a20_N64_Q384_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f7_a20_N64_Q384_M1.npz",
+      "original_sha256": "cd9dc175626f78eae5413c156e4d7961cc52086bf315fe5ca53e1eb5a0aa733c",
+      "converted_sha256": "81a528f7ea445cd4772c6a70c0e8d2ffbba7d81f7193ee421d5989bb983cf268",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f7_a20_N64_Q512_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f7_a20_N64_Q512_M1.npz",
+      "original_sha256": "cf032dc41dbf8662eba4d9cb56d632f7ea8921c5f2b24b155d6c4b647cc3f339",
+      "converted_sha256": "006d37bd88242a92e53802761a9226bcb22e34f0002132882a64db35e746320e",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f7_a20_N80_Q480_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f7_a20_N80_Q480_M1.npz",
+      "original_sha256": "e460a26f0f9ac5546be273e7c18ed0050c2f68a9dfa44fde5d4a090b209ddfe6",
+      "converted_sha256": "69feeda9a706e8e983da2f8ff2eda3cde578d618dcde6d7ca1267ffe52f9742d",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f7_a20_N80_Q640_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f7_a20_N80_Q640_M1.npz",
+      "original_sha256": "429521db978ca5b5394a71e45077bce0dd7baf6739d4dd46e511b7e5f6d2c69d",
+      "converted_sha256": "911604ab3182d2bbdfaec64282cbe8cf6cf1734c5ce34818212cbd1956cfb293",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f7_a40_N48_Q288_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f7_a40_N48_Q288_M1.npz",
+      "original_sha256": "c325cdfec8cfb6058837dcf4857b94e2d8959cd9f3e16fb7809f9d8801ac7e40",
+      "converted_sha256": "97a8f03d111c6508f2540819b0333e23ad511d0e7e4412e8c77cc503668fa7ee",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f7_a40_N48_Q384_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f7_a40_N48_Q384_M1.npz",
+      "original_sha256": "04404b027978accbeb94dbed28e6fe29b1b010055ed91d77e4c9d2cbc55269e8",
+      "converted_sha256": "aa16f292cb9b687bd24086c5569c6bb2806dc9422a39ce53d3701c4cc5c20ce2",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f7_a40_N64_Q384_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f7_a40_N64_Q384_M1.npz",
+      "original_sha256": "24ffa4a0411d7f674582bbe1e23a3020d29f4fcced32f51a908e66e0596bd59b",
+      "converted_sha256": "ca7a8ad976bdeae41bf0c70acdde3e529b21a71cd9379e4b81bf01eb1397c81b",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f7_a40_N64_Q512_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f7_a40_N64_Q512_M1.npz",
+      "original_sha256": "53561efa24e4f6346f2a912c952a1e8357e1a818c6a04485a0c590f91c024941",
+      "converted_sha256": "5ed54f518eef3984c5b44dc1509f4acedafdb4eedeb68e9e5a52dde64e2a9d1b",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f7_a40_N80_Q480_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f7_a40_N80_Q480_M1.npz",
+      "original_sha256": "1cd330c3e136a8e0f1c0980228323450061af3d427f9587cfbe4535406b78652",
+      "converted_sha256": "066910b0c6b115c74ee2962caa94c70a5db4d014cdf8966fb7dbb138dc2d9830",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f7_a40_N80_Q640_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f7_a40_N80_Q640_M1.npz",
+      "original_sha256": "31a3847182848970e30d7b9dc0aef00a83a2b9eb34c38605679743f745f7cf7e",
+      "converted_sha256": "9ba5dfbae7ed2033ebdbc2670ce05e82dd37eeb9435ff1c6155e9264c65e33b2",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f9_a0_N48_Q288_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f9_a0_N48_Q288_M1.npz",
+      "original_sha256": "068d262b9816e350c9039a3cf42eb636b8cde2b3d4323839cacf4ad930df360a",
+      "converted_sha256": "8f2e29b51e71f45e4e0862ac25f8c0cb7389806aba1e0c859c612b30a398825f",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f9_a0_N48_Q384_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f9_a0_N48_Q384_M1.npz",
+      "original_sha256": "e1184931705980fcf1acf21a8ecf3447cfc224ec3fd35630c1fd21c45387f226",
+      "converted_sha256": "ed2e421097a77765846a9ef13f8d4067d093ed5d848c69f75a814dab1adf2214",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f9_a0_N64_Q384_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f9_a0_N64_Q384_M1.npz",
+      "original_sha256": "d3112b9aa7520e8278c4c499e52f43ec9d63682c2f0792fceef5403ae88a08bd",
+      "converted_sha256": "c8d619119869c4c10fbe34afa5b21089250bc02c7db775194caf85dfc9a80e30",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f9_a0_N64_Q512_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f9_a0_N64_Q512_M1.npz",
+      "original_sha256": "456dc74037941c156522a6cfe7883c90590897f338fae4ffb10409c3dcf95f0e",
+      "converted_sha256": "d712a4e8357537c0cd1c24be3a036d416ad82eeb9d7f02297edc2663cee83106",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f9_a0_N80_Q480_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f9_a0_N80_Q480_M1.npz",
+      "original_sha256": "329dd7e6175a7cf114344795a81404cc6bcaae4a7ff4ecdcaafc8fce0c3589e7",
+      "converted_sha256": "2cf303b650a73eaa794da4f5723a80c1eaeb0aeae5dc87f7158f84ade0da52fb",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f9_a0_N80_Q640_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f9_a0_N80_Q640_M1.npz",
+      "original_sha256": "bba3e3b0a31b7cbb7448b1842d9e6537e2deda0d7fd82daf066ce17ae0c5f1e5",
+      "converted_sha256": "09d15a4d662544c86f1fc9bbc7321518392c933d679bdbd776cbeab4baf77a6b",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f9_a20_N48_Q288_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f9_a20_N48_Q288_M1.npz",
+      "original_sha256": "03164cc2fa5473a6fac2e7dbdd318dd5832d71a6aecda904aa9f4de0c1281f5e",
+      "converted_sha256": "da2cd3193ad09f5e4f6360cd95d7d8c38576398234923bc042745e27736aa545",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f9_a20_N48_Q384_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f9_a20_N48_Q384_M1.npz",
+      "original_sha256": "937a491141a7dd7052cc7e90fd2be4ef0f647a8fb66e0c7ce798b9fcb8bbf022",
+      "converted_sha256": "ab266a58ad29c546a2a0d6f82cb8298a077a416fac121d8328be68fc3e9dc070",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f9_a20_N64_Q384_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f9_a20_N64_Q384_M1.npz",
+      "original_sha256": "b870fd282ac35c5f5cd43c4442ff52855cb21009f56da0e324984d2d4d35e180",
+      "converted_sha256": "9625523b7a4e01bc307223040cd55c4f1af1a636c68d3ce207c8cbc1ad432077",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f9_a20_N64_Q512_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f9_a20_N64_Q512_M1.npz",
+      "original_sha256": "a07b245ac101c351d24b5fc113418315eee153bf399ef9c8de0613044362b786",
+      "converted_sha256": "a918f2e52cff782e1ea3e2843546bee7a38c44ee11c8532ad023d0f5af8fb9eb",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f9_a20_N80_Q480_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f9_a20_N80_Q480_M1.npz",
+      "original_sha256": "c30a30394ebd44d30000c4a51e19f316e18ec2271dcaabdf94a6831a21adb80a",
+      "converted_sha256": "81474f3ae41be42c3e34dfcb8ae543dcb50ae7146e4e83646b055302f9252315",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f9_a20_N80_Q640_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f9_a20_N80_Q640_M1.npz",
+      "original_sha256": "475b7aba072844fb4687ee6868f71cf874df8867bf15419a44d53461024a22be",
+      "converted_sha256": "2cd1ea3189d51ff318196c48420e26daec9e3f5959d1856469efaf1383429b06",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f9_a40_N48_Q288_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f9_a40_N48_Q288_M1.npz",
+      "original_sha256": "bcf63e1d5f90c1d0b89abd27c0fdc1ec70ae28e5aa0abf1e2e4d682bbdc8fadd",
+      "converted_sha256": "d7c979823ed49f93689639e3c3339ec14f2e405e5219b7b4c1f3415cb3d44402",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f9_a40_N48_Q384_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f9_a40_N48_Q384_M1.npz",
+      "original_sha256": "566622333503a6d4f061d1d53e35a6750bc338ac8ea20b4739bc3d5479cf96e0",
+      "converted_sha256": "429668626bc7ad3c6043de7ce98b40dd35a799fb255f4efc542fd56f89e0f07a",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f9_a40_N64_Q384_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f9_a40_N64_Q384_M1.npz",
+      "original_sha256": "44328e81d61c89e9767737cf54d1d472d61311def3ff8f3b920b590654560c70",
+      "converted_sha256": "b832953f8b15c9e9f395af4cbabf31f4021faf3f0091b5c6ac9466f028a47e33",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f9_a40_N64_Q512_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f9_a40_N64_Q512_M1.npz",
+      "original_sha256": "3c3f13e8e78897ffaaf6b3213065533195b293802b2e688dcf4b811803ecbdd5",
+      "converted_sha256": "794cc9808d24b6458d7dcfc3593624834bce0f17ed9a8e8f6612caa4f741af1a",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f9_a40_N80_Q480_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f9_a40_N80_Q480_M1.npz",
+      "original_sha256": "929ea61f38f9b0322752784d7ba958b2161dfbddc76597a317766baf28d8e728",
+      "converted_sha256": "679925dbda72cf8b249f0bb5cdc5f1e9808274c5f3452f8e311cb21f942a8980",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f9_a40_N80_Q640_M1.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/reference_t702_f9_a40_N80_Q640_M1.npz",
+      "original_sha256": "bee38a2449c7f1f2675cb17720b164456356ada0476b7224e78bbc4f64c44178",
+      "converted_sha256": "702249528d2d9aec8efb51d2a5c9e5bcb8819429847e375e4dd39423316748e5",
+      "variables": [
+        "S",
+        "Xm",
+        "Xp",
+        "info",
+        "mask",
+        "topology"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/fine_reference/selected_masks.mat",
+      "target": "output/awpl/revision20_metal_paper/fine_reference/selected_masks.npz",
+      "original_sha256": "e55a7a95a48caf51a8d0e568f31e2982f8c7907a8ab0d312d38f41efbc680d46",
+      "converted_sha256": "ecb5ec1fc71e37a4a108f5fd44683e346defa18a34dc568bbcf936b0b2e2238e",
+      "variables": [
+        "selected_ids",
+        "selected_masks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/nn/cocg_novel_test_quality.mat",
+      "target": "output/awpl/revision20_metal_paper/nn/cocg_novel_test_quality.npz",
+      "original_sha256": "b2184e9fb3f8f908b47b4575fee44e4db00492f1a9697755fe619be4cce01e30",
+      "converted_sha256": "1f9da335c49c504ada0535525b4f82df2e9d25ddcdfa833f8510615c268909c9",
+      "variables": [
+        "Rrepresentative",
+        "T",
+        "evaluation_seconds",
+        "o",
+        "representative"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/nn/cocg_refinement_validation_quality.mat",
+      "target": "output/awpl/revision20_metal_paper/nn/cocg_refinement_validation_quality.npz",
+      "original_sha256": "b788d543bdc14fdf70e0b047a8398f37aca62b801be822dd591fe167bb096936",
+      "converted_sha256": "b8675ad2890e7e4df1e02194a49e36e3af088eb914f34942f7dfee9017e97299",
+      "variables": [
+        "T",
+        "o"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/nn/local_model.mat",
+      "target": "output/awpl/revision20_metal_paper/nn/local_model.npz",
+      "original_sha256": "15759da7618dd6c80a76df6749e547737e60ffc1e0ec47be563379596fa9251c",
+      "converted_sha256": "942ab4297916031002aa195c1215392b037092e19d54b6935cd02151f72543af",
+      "variables": [
+        "best",
+        "bestEpoch",
+        "history",
+        "model",
+        "o",
+        "training_seconds"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/nn/local_novel_test_quality.mat",
+      "target": "output/awpl/revision20_metal_paper/nn/local_novel_test_quality.npz",
+      "original_sha256": "aec6b99188d43d5c4e901918b64c803fb48386154b765f35e51787ff07971ddc",
+      "converted_sha256": "e9b98acbb736c24cfdf80ca98075d807e65a8bb015888b6f4a5aef492789ca5f",
+      "variables": [
+        "Rsave",
+        "T",
+        "evaluation_seconds",
+        "methods"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/nn/local_operator_audit.mat",
+      "target": "output/awpl/revision20_metal_paper/nn/local_operator_audit.npz",
+      "original_sha256": "200b129dea1b2b7696217733d8afb45752b57ff24e07d362f158a9ba6b35a9e6",
+      "converted_sha256": "4093583ee545551443c6ad1c50b9a44b521b31800f89da33f709219f5dd1bb00",
+      "variables": [
+        "audit"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/nn/novel_test_labels.mat",
+      "target": "output/awpl/revision20_metal_paper/nn/novel_test_labels.h5",
+      "original_sha256": "9caa6ec1e9fc4fe957cf17468474120229a8fdd5edefab2e39d02fbe681ea714",
+      "converted_sha256": "b8ea713b5e927c421f5cdf84a799db60574d312d0a93abf43df005d87d538475",
+      "variables": [
+        "masks",
+        "active",
+        "currents",
+        "responses",
+        "freq"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/neural_check/neural_stack_raw.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/neural_check/neural_stack_raw.npz",
+      "original_sha256": "8bc891dc21964c2c0a13d75cbfb21287377d89b7290110897ccc68459ed100ba",
+      "converted_sha256": "f463c2e836ef3313e738fdfeab2b00e261889605c9715c61d0f4e13c7c5bc0b7",
+      "variables": [
+        "M",
+        "N",
+        "Q",
+        "T",
+        "Ts",
+        "complete",
+        "freq",
+        "gaps",
+        "masks",
+        "model_sha256",
+        "opts",
+        "phi",
+        "references",
+        "states",
+        "theta",
+        "topologies"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f5.0_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f5.0_th0.npz",
+      "original_sha256": "9824b5e041eea8a2f4329016e369405643ec567d9acdfd78176e219b2589f3d5",
+      "converted_sha256": "01fe4b653b69ee68f55cacd3b035d63174d7c7402f7d9b3a863e107b0d77e854",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f5.0_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f5.0_th40.npz",
+      "original_sha256": "518e55b75b4e7535283fcfa8d7e10e6f3534e352b1122617d1c84a3aa449acfe",
+      "converted_sha256": "54d089de448bea5ca048ebcfe1381025c974291d9936b41d0c5c806abcd8bb60",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f5.1_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f5.1_th0.npz",
+      "original_sha256": "eb6ab7a8cf310bf149386841e9012c8bfd8423d6b7bca0c04bec79e5e03dbdfd",
+      "converted_sha256": "4b6f0878fd5e62cf49c6bd14890a6e989a313785f8aa3f917e66b347fe33398a",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f5.1_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f5.1_th40.npz",
+      "original_sha256": "55cb698834ccbca279a19b48faf7312a4c0fef1a8e097f64f5371c752a25f82d",
+      "converted_sha256": "4f5fe186488ef484a6a7f2d09a5c7653dbaf2bcf52b9cb1fa6e7d875b99fe358",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f5.2_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f5.2_th0.npz",
+      "original_sha256": "f68803b348cd8010e56b248688da079e3f1bfa3ca4ca3968d77d102045c015a0",
+      "converted_sha256": "4474ef59a160bb0f57b5013c1f40c28cc4aa4a518233e5ab657d768db29a51a2",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f5.2_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f5.2_th40.npz",
+      "original_sha256": "04bdd6a027a3899eeb22ae0e7ca0a93dab82b3d7e6fc70689118b3813d613440",
+      "converted_sha256": "e0895d2ff890ae06744ebb3a6e149f8f254063fb9cc6c43eac26581f98d32249",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f5.3_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f5.3_th0.npz",
+      "original_sha256": "a00eff54ead0730646aa7a129124a37f57fd72d62bece993e6a8f52a0d95c132",
+      "converted_sha256": "db3905e20e5f23541bc09539fe95cd2fe79fd7895683c348d93ac08e6e28776a",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f5.3_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f5.3_th40.npz",
+      "original_sha256": "4ee5183c95a0d89c1ba5d8ceb55bb14162beaefe51e6709fcedd874177e78366",
+      "converted_sha256": "509d62573b5ac2200589b80f392bb8b56043cdce84c1fda55a48a0efe0305284",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f5.4_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f5.4_th0.npz",
+      "original_sha256": "2494319a2ddb5235b1c9f634cd7ab73f17f4795de819e094162e1466f60723a9",
+      "converted_sha256": "4f1af16532c19092cf2ab53b2be626367870082d589ff80eb6b25a6b4021d76f",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f5.4_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f5.4_th40.npz",
+      "original_sha256": "d12cd0b88537af207768ce03de068ac3103915ac3225e10aed172de826a47dd3",
+      "converted_sha256": "c183346407731e262494df68d2a973ad08d75f2736be99d9e35b27f47359f2e7",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f5.5_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f5.5_th0.npz",
+      "original_sha256": "22e95140961d06bbd413867c239e6a7e37caab6baf5be78bc32ceb45d9148111",
+      "converted_sha256": "5f088a95d8f29cf90d48f8f510331e713fe871482e8626c6523046a6f8596305",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f5.5_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f5.5_th40.npz",
+      "original_sha256": "f70e50f923a0b11bb2f8a89098d1fde49ab1f7a03235713e53803875c7a5d403",
+      "converted_sha256": "6fdde988978da3443658ea5890b4f7969ca3b3ddce154b2f74df447a6091610a",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f5.6_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f5.6_th0.npz",
+      "original_sha256": "3d4bbf85462935d4b664e43160acb93ddbaf624b883188a51bb358d21e1de848",
+      "converted_sha256": "85a7ddcca0f5cdfc1775a856e9bf8d5db7ae2b6836e7f0bda3669419f71f02b1",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f5.6_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f5.6_th40.npz",
+      "original_sha256": "aa146e26a0494ba02d861ef9b9212c29682aaea406f160afa6efd9ca13223cba",
+      "converted_sha256": "ab7bd78c1f0234b56082fb3a25bd0ecdc30b3341d804c1cbce0f0300574b3571",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f5.7_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f5.7_th0.npz",
+      "original_sha256": "9d29d392ef4c719602a1fa03d220a3a2639f3356590909bf529d3dd4d6441def",
+      "converted_sha256": "0f398e2a91f3751b62902b3d890b0df90150cbf41fb8480570ee55234e3990b2",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f5.7_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f5.7_th40.npz",
+      "original_sha256": "ad9d243e9498bba930a8c68e9457af232bfa48982604a20885ebd3f3e94a0ba0",
+      "converted_sha256": "46efd29cf980dbd23aac1e1c1569ebe4a73e1fcd6adda2f9c3bfe13bed19fe72",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f5.8_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f5.8_th0.npz",
+      "original_sha256": "dc91b1605be9cd858309b6d490d270bcddbe4cda5966f1f1ba4f1f0e526bc0d6",
+      "converted_sha256": "d25521af10377060a31920cad320217529a5619eaa7911ec8a1b7f74dc36ced1",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f5.8_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f5.8_th40.npz",
+      "original_sha256": "894978c142c8cff9281dee33fe7ce13787b1596fcaa1ce6f240b92a71d00b611",
+      "converted_sha256": "7a7edecf78633389ccdb30ffe4a743546a94e3b3354c941537618541813998b0",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f5.9_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f5.9_th0.npz",
+      "original_sha256": "5bb5df5d4a4f6a48fa8719bc16b35132ecca1d643c25501dd34cec566fd6e585",
+      "converted_sha256": "4ac01b75eab379a630d90cfcc1fb755fdb6fdc270ed7f19c40f22cef1a4ebc54",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f5.9_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f5.9_th40.npz",
+      "original_sha256": "2109ddbae0779a7d9338cbace8ead4797b6a114bd304f402805c43466f69091b",
+      "converted_sha256": "96801ff0edfc0d8a4acc6d323658a694cb0fc53f5acd01301cc4dc4d29ff7444",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f6.0_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f6.0_th0.npz",
+      "original_sha256": "afd5565ed7d2023669fbbe3ef97061940d74ebb8c0d8a36c8e8f8730d0ece9bc",
+      "converted_sha256": "e9968da2a8ad8663253966e431094f2b440d7c186eaeb8570b1f9a596901be8b",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f6.0_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f6.0_th40.npz",
+      "original_sha256": "3dcb4b82d66ae3769678024a5fcf5df465725c625cb7f2808af387f55f0abbd5",
+      "converted_sha256": "f3844e23d872cc6bf47732cb495c9a177ec5df3e7d691a29fa1124fdeabdea83",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f6.1_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f6.1_th0.npz",
+      "original_sha256": "fb5c8899709e123422f61054c28fce71b0fb4a02f5b10a79bdc3635f351d1824",
+      "converted_sha256": "9d2804d3a0aa80fb85d8b1c3cf9d133ef1a4f286ff7f097808b1bde7d4a315af",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f6.1_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f6.1_th40.npz",
+      "original_sha256": "130b9a5a83ddc39a827c9938f77d5a0a6da65163cb0fb573ba8b85e0c56ae07b",
+      "converted_sha256": "c0259b24a21b15a1dc4fd603f8651f8892fb6d2fa9e7d99e6f5be1928397da20",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f6.2_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f6.2_th0.npz",
+      "original_sha256": "cd7f4a6913d74fdf2df12ee93a3fb6cb01ea0c60b8394c9381f811654c1c0fdd",
+      "converted_sha256": "b4c20c630ad2ccedfb85c60998366b13d5142b95c7522741bf88c04de54eb1e3",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f6.2_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f6.2_th40.npz",
+      "original_sha256": "6707975919311a50b682ede26dfd6d8434248e395ccd80d6c1ccbfa126259321",
+      "converted_sha256": "396ee2d229553d0e2568cb76f538801fa5c7075c62ea20b1f56809762b7cf2d6",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f6.3_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f6.3_th0.npz",
+      "original_sha256": "dd266114f87f4623fd06009e7ac02f39112ad27ebb6157a379fdf44ca62a26d5",
+      "converted_sha256": "aa18a4db167be3047c0992ce50fcbca78b9692b3aabeb2b1c6479d03dfff1581",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f6.3_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f6.3_th40.npz",
+      "original_sha256": "ecfe1a87b32fe1e22d443c20ed6d4475294fbef0501d12fa8f42b7cc38d099a9",
+      "converted_sha256": "54eaff0591c01134471b6b1b747439c1af40587912482267c923f556fb4fcc20",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f6.4_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f6.4_th0.npz",
+      "original_sha256": "474c47cc0b0c34e2993147e92eecd2a1cfad7c8f33055a304fd0684ca7aa0468",
+      "converted_sha256": "811b959fa8fb50d201e71ab289f00412ad70dba18017b0a07dfc65dc3c3a1ee8",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f6.4_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f6.4_th40.npz",
+      "original_sha256": "730f31f1cc37b6b0530e50c49ac4e49fa70461ec31c8149dbdcc399ed7a1e943",
+      "converted_sha256": "24f3d0a192956d0bac123491e5e8a50ec720c20f8159a336ab35e7103efc9d8e",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f6.5_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f6.5_th0.npz",
+      "original_sha256": "466125496da94bfb85665df1617f01f5505e153ad9270391343208e35a1bb2e2",
+      "converted_sha256": "c8cf3b7608160061f1a807b5f64b30ddc901518bb1ff0f8d7b414aff71b9f3ec",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f6.5_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f6.5_th40.npz",
+      "original_sha256": "143fbe0b0166181c7c899a4399f569e395c7218b6feb1e170dcbb829e5a24583",
+      "converted_sha256": "a9c2fd624671c29e6f0b988d486e4267cd099d139cad1e1e42f5950de3744036",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f6.6_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f6.6_th0.npz",
+      "original_sha256": "a1a738294ddc7a8204e74c6077503fc7226ec1cbaa345bcfc6540b3372d78567",
+      "converted_sha256": "1867cc2124787bbb93e945257cc40ca62ec89c6e27c2a3989da27aaacad2ea24",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f6.6_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f6.6_th40.npz",
+      "original_sha256": "d34fc6d501d4d8c037f29616d749fc78f1a45b23ddd30d8af1fb2fc3a9e86e4b",
+      "converted_sha256": "369397ab486dadde081600960aa347d9f2135b40ef8e7e69e6126a8a02e65735",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f6.7_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f6.7_th0.npz",
+      "original_sha256": "764f2b7a464753a636ff76f21c24c19c7c1dd997a025feb8001dbe3134371197",
+      "converted_sha256": "3a33a9ee2e72a4dc1f908dd8e56dda39bb81432cea2bc18147b0372793bc6bfa",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f6.7_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f6.7_th40.npz",
+      "original_sha256": "1b2e5d7354871481a29fab09ac82995f6d0ced21e2e1abbc2bc0e6e7f659755a",
+      "converted_sha256": "26fb8848864d4ccafe2cd91a50e0aa03ed2ebd5b35b5f107dff4ca0095e17e9a",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f6.8_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f6.8_th0.npz",
+      "original_sha256": "58d2f18909be964548e3509737f550943ff2f34534825dace571cfc56d160288",
+      "converted_sha256": "a058f105ab2d569fbc18927c99d6c9c581495755a1d8dfc692f03624652ff515",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f6.8_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f6.8_th40.npz",
+      "original_sha256": "a251cf8d63ebfbec4a8b16108272270879208c87d11cf55356e3a49701ea0f79",
+      "converted_sha256": "d667823e87958d7299ad468968184ba35a9ef1da94e787e90cd3d417304104f4",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f6.9_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f6.9_th0.npz",
+      "original_sha256": "29b834c278d9890f51abc5233dcb8eb932b65efd44fa879d90b61e935b79f058",
+      "converted_sha256": "9675247a91db46b8cfb33024e44841a59aef92748cff08d5ecc9a956670f6d74",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f6.9_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f6.9_th40.npz",
+      "original_sha256": "5488ec175554b33895495be350c5c03cacc560b13ef30edf5507d32d2289935a",
+      "converted_sha256": "701c911756ca6dcf8d86afa4e8b1c5c252fb55fed5b0aeb0323eccfb21697211",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f7.0_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f7.0_th0.npz",
+      "original_sha256": "6114fa94faa7172f97e4c26fd394d0644334f2eab25442fe847e33844ce867a2",
+      "converted_sha256": "a8998f816e3cc4455d679a5463f445dd9018ecd3b552709a97bbe7058daca2d0",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f7.0_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f7.0_th40.npz",
+      "original_sha256": "81792df649f5cd84fd8469233bbe63e02b82f85570bed42d3717d85e8de4152e",
+      "converted_sha256": "0d92528595bcedc33e704238551bf28131390be74faf90d78ea1a4f1064ecee3",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f7.1_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f7.1_th0.npz",
+      "original_sha256": "ebfe349030696f8d671bc09ea39a97224179ca19038ebd8105651e2b880ec00f",
+      "converted_sha256": "491b4b2e0cf73aab0983204474691e0217c1b248414cbcc45016db8165da1224",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f7.1_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f7.1_th40.npz",
+      "original_sha256": "5849c5178109a5060858d543a12c740b4ca276dda706e89450d20068b08a0d1e",
+      "converted_sha256": "e044fd1a97768180dba93fd65862e6b41c87618099497c1a4d0b8fa5aca41475",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f7.2_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f7.2_th0.npz",
+      "original_sha256": "0c7b55bf379f10bdfbad74304e0cc4a6dbd455d2bb8b34894d0fac98a9ef5353",
+      "converted_sha256": "6140844ad25973916bc626694107817b79aa6792a8a726f43a9e30d071d17b2b",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f7.2_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f7.2_th40.npz",
+      "original_sha256": "f311f844b412ddd9a5320ad06fb8b39d9f4831798810d1c2432bb73dbd96a430",
+      "converted_sha256": "4dc9a438077158ac56d1a14f02f77e3bc3d10fdd072bdee54b42cc74db8333e9",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f7.3_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f7.3_th0.npz",
+      "original_sha256": "261efa5c24f6832ff093124c99796d717ea75af7e950767696ae0590e4f65744",
+      "converted_sha256": "12c8a174745a28135872f47eb9957303c43ce15c327e3177c434df5022efff8f",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f7.3_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f7.3_th40.npz",
+      "original_sha256": "6e20229de553e30946f0391fde2be80f0ec2a6223a7c65e310b34cf5a906f135",
+      "converted_sha256": "06e9ace17053c92f18dc580a45d6ed3a364d4f6e2c175ae00d6e1b2a1e5e5dda",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f7.4_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f7.4_th0.npz",
+      "original_sha256": "ff218d5f5d3a9a7e13e6997724abfb1b5d227531f2b201b115730aad44e521a6",
+      "converted_sha256": "c5eb61d9f898e2d8b50838a1a0e7277462ecf9d103cb0571f703798027577686",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f7.4_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f7.4_th40.npz",
+      "original_sha256": "598c7bfcbef00f4f1a746384f0c3c73f46c0496dae11f970eea2030cbf57d211",
+      "converted_sha256": "f0bb34c39ad6fbcc83e3a5ba8e59771f2a8ec854f56df7338eae3236251bf160",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f7.5_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f7.5_th0.npz",
+      "original_sha256": "1218ac34c5e9367d4faa9e436d289183373ed18bbf500308139c46ad83e2b400",
+      "converted_sha256": "898d616cbb9bcd522d08c7e24dd65587cfd3a572a1bf9a2d6647a807b59ee217",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f7.5_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f7.5_th40.npz",
+      "original_sha256": "8bfed29a892d61403576b681b8af55225a7695d2c7a70347e9bdbba23777b0b9",
+      "converted_sha256": "6b275116c6d96b6ac6269a3851940f9c405f9a3339444e3ef38af73942dedad3",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f7.6_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f7.6_th0.npz",
+      "original_sha256": "fcba9fc11ca65a73f3a6dc422a7ebf88fc248e0ef83a035440bf5934249cbcc8",
+      "converted_sha256": "dc428826299b19100f35bf24996ee2a58b1ce37d103f18d43c32c6a9d1108daf",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f7.6_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f7.6_th40.npz",
+      "original_sha256": "cdca3b60e43a2aaa7940589480a68402a19986cd92152d59ae76babe446ea98d",
+      "converted_sha256": "0a59266dc1af7990253259b1e9b1a60f6271d606759bffb4b420a550a26324c1",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f7.7_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f7.7_th0.npz",
+      "original_sha256": "1d9ef0c18f92a8824002043ef0e2e3353f65a936e676b16e074839b983fad260",
+      "converted_sha256": "f4239dabcc4a560e67ff851b51a2f64221c7934b1847054cc75bdb5789c3591a",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f7.7_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f7.7_th40.npz",
+      "original_sha256": "3e3f680fc742db1515d6d2c67709ddfdbd978b88e066ab54be88ca0c04db765b",
+      "converted_sha256": "aba7a90d5e866a7f75890ec6ea40c37c753b87a9a87b1e3394b1e230a371e31f",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f7.8_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f7.8_th0.npz",
+      "original_sha256": "b2b716bca036003a39e1667ab31d40d204e1be1cd7e81c7495c4afad6bca4066",
+      "converted_sha256": "0be1cf80a305bdffe1ca7405ac3e98f240d905225311e81b78e917ab2897ba3f",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f7.8_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f7.8_th40.npz",
+      "original_sha256": "dde66cb63d39cb139b3e65189f0a0a8c4187c14d13b482132ccedf355c3dd3b9",
+      "converted_sha256": "bf6909d345f6789325d95f7918bc16aee624ebe01e08118d3dcdda7205c87bfd",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f7.9_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f7.9_th0.npz",
+      "original_sha256": "c70a806b3f3c3cebc6eb65a59e259913081b20aa580410fe198a1157e2f1bca2",
+      "converted_sha256": "99718987d300022c72c436c1bfece46d047de96816d451a37b5c7fb6373f77cd",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f7.9_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f7.9_th40.npz",
+      "original_sha256": "62e02bccb27224688b867540cf9fb47623e738b3ea1799f15ec3f25771ee52b0",
+      "converted_sha256": "77f46836b1f552adf90685782a86ff165d1b7470b5ef6f7b730e3996f305fa7f",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f8.0_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f8.0_th0.npz",
+      "original_sha256": "4192040bfe6e5d460598d62acea84bc3929886da866b3f5f4d6f0669b0a273c6",
+      "converted_sha256": "c05df167ad11657016961910187a8f27b5f4819e8090683396fd637d332bc163",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f8.0_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f8.0_th40.npz",
+      "original_sha256": "28ede3e850f8ac5afd1a64f6b77a3abfb3dec9d4b0a524095f8bf69f8ed79ad0",
+      "converted_sha256": "7a6607d6791bc43e3644c7128f5bcdeb5ba921a0223c627cc2b76b25fa5e24c6",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f8.1_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f8.1_th0.npz",
+      "original_sha256": "243d88984e0dcfa22a537e319477d580dd9e332636d07b2ad98ef28076c2cfc2",
+      "converted_sha256": "5d86f2ffd4ed6738c330b945ee686dde72d18febad40e0536a69bab6979f154c",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f8.1_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f8.1_th40.npz",
+      "original_sha256": "a5ec37a9d2b96fb8b51600a68832bbd8351147b317b0c88b59f0ee35d4b50dd5",
+      "converted_sha256": "4cdc86e96a81fe5b7574f155f8732cd1277cc8aed01425102f83a93a6b233b79",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f8.2_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f8.2_th0.npz",
+      "original_sha256": "3dca0667d2c4e1628459b08ce2e36eda84bd3f2161b472c4cfef396e5116398e",
+      "converted_sha256": "2f69fe9ab90335642a4ff35e5a9b8a54ec7018de63e70cd41fd7b17c51200432",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f8.2_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f8.2_th40.npz",
+      "original_sha256": "13fbc2969c96a78691eded0163be59eeeeacc3464505d0ba3395094c8ef5ae00",
+      "converted_sha256": "646b901c6df5805b46a99b7c7fb61150c02ac441f3838e6f827d8cb1c94fd2b2",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f8.3_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f8.3_th0.npz",
+      "original_sha256": "ce8caff227dfb4903f4f059e66f9e6c1a1e995693fa38f69ea7d5e8919359b22",
+      "converted_sha256": "038eede9969941d00c61a5f103e05ee26f3c43778468cb53b38e71949234ddf7",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f8.3_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f8.3_th40.npz",
+      "original_sha256": "f0a48ec939c33a9eef5da1e2b00c1573793190ec8831bccbfdd181eed139f5df",
+      "converted_sha256": "bd12d4ce42423a99c0f9387624b40980de6dc3a08cb0df2b9ee615c308f1b65c",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f8.4_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f8.4_th0.npz",
+      "original_sha256": "fc041bbf59a929f2a9fb2e2615f02ed5b980e4cbfa386e7aaab1e449c39a6ad9",
+      "converted_sha256": "428680489a5c9bc99f7e37bc163ef5f2083e5f16734a42c78f91ce0d14ba54eb",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f8.4_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f8.4_th40.npz",
+      "original_sha256": "8e457c126eb56b2373dd99d3e14409bf9f069cee5053b24fb42cbae0c59c039d",
+      "converted_sha256": "dce01b1d9478fb2e751d04269c32261a0b34cea2b11b633cb10a902dce92591b",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f8.5_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f8.5_th0.npz",
+      "original_sha256": "e2225c65e40672bea0a9d482210abdf5cd7298e9695e65c35796545289bb197b",
+      "converted_sha256": "94a2bcfa17af148744c78f70f6a1f7bc96b50e7a1dd42f29ed8306d361d04fdc",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f8.5_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f8.5_th40.npz",
+      "original_sha256": "72308662006445502a8fd2983a633147b635db547829dc2c1a64df0355302b06",
+      "converted_sha256": "c517cd15b77a16d14f1d6019850fe25e9c34207742c4b14d1b5b88e87dd834e3",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f8.6_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f8.6_th0.npz",
+      "original_sha256": "f4139ee6c6a7359fae2ad446727e1ab122235e54884a8517c69197fe5c3daf37",
+      "converted_sha256": "9afb0351c08e28d2389a64185653c3f3af1c1d3496932f6f5223e2a685fced2c",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f8.6_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f8.6_th40.npz",
+      "original_sha256": "7b97cb756474c572689f2760000239ed60ba6ad0b8532f848ac3fb54fff6fae4",
+      "converted_sha256": "fb4efc7c10c0c2006ef00769e48ddd52ace822ad6cf9a5b6930bbc2cd28da647",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f8.7_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f8.7_th0.npz",
+      "original_sha256": "1d5d8b6b329fe35ff8698fe7f96bcb207f9a3326456eac301f4fb379b4c2d592",
+      "converted_sha256": "336b4d21da396548caa498648b0ed62c7c6cfc727f220cdf75a9665b0d28e2a4",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f8.7_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f8.7_th40.npz",
+      "original_sha256": "011327e351d9a219c607d1f0ad2781e9550ab4ea9f711a066ba1f6b3be0f692c",
+      "converted_sha256": "f4c6d8fe64cabfd2d9f7fc3d53a734eded0a65e935c2a89da2e4fb69fcd3f827",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f8.8_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f8.8_th0.npz",
+      "original_sha256": "b74c9820a6025dca9ce8d31e6797a48dd75c606b5f186bb1ea1493c7f5b646eb",
+      "converted_sha256": "07b23d6233c59763cee5f8873a45557932086fb17634669b164cc07a4d0b4b42",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f8.8_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f8.8_th40.npz",
+      "original_sha256": "43fe27cd40d668450584f55fd1d1d1883f4bd878c28a62c739b8b6a93239aebc",
+      "converted_sha256": "0f65bbfa1886963e6e95c77a712be6ac5a78aae18811b09b1d61577bfc47a1ba",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f8.9_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f8.9_th0.npz",
+      "original_sha256": "5b84f4a43498d05b5d0c413d94da64c95ec40dcf3cfef240517cbeff8e100b88",
+      "converted_sha256": "f89d6fbb432781974edc1a6496d9b7826f44c1f9afcf44efed3004dfb0bfcd43",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f8.9_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f8.9_th40.npz",
+      "original_sha256": "2feb4c174cd8b088702efebfbf9a18a441e756c0afd6c7950c5edd25ebdaec05",
+      "converted_sha256": "707df262f3b9080dc92264b2b8fbfd1bd704e2270a3f15aa090a401e5219d6dd",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f9.0_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f9.0_th0.npz",
+      "original_sha256": "9970cdf4564fed7e48488238d71bab6efe1ace95f03e31f676a143d97c4bd31c",
+      "converted_sha256": "ec97b475b89b0ada4306b58bec8eae2ec2bc199c947a01f87f3adaea3eb93c1d",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f9.0_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/spectrum_N32_Q256_f9.0_th40.npz",
+      "original_sha256": "318ebd518ddc9dae55d89cd0f3064083cd6967d609dd0a2ab34a93b89b18ee03",
+      "converted_sha256": "478488cc413faa8ca7174fd178904c282bdbcfa40b6b5154e78bc394379abbb8",
+      "variables": [
+        "Scs",
+        "complete",
+        "curveRows",
+        "layerS",
+        "meta",
+        "modalRows"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N16_Q128_f5_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N16_Q128_f5_th0.npz",
+      "original_sha256": "ad2db0519750e7bcd02e1a4ebd3c3c9e1fb86649a9429a21edfde2d0776a4dd4",
+      "converted_sha256": "75e68b7e9211c65ff4ddb6d81b83d87f51fa7d3876f1bea97c7b020125f41526",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N16_Q128_f5_th20.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N16_Q128_f5_th20.npz",
+      "original_sha256": "14b0ba64378bf66a88ecba194b2ae40fb37ba82cdd1a93a36764293e83af32ca",
+      "converted_sha256": "16697f204ff32e996f38e19d97af1c95b870bbb2e0f717b5ba830b6263ae96ec",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N16_Q128_f5_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N16_Q128_f5_th40.npz",
+      "original_sha256": "c217bfdf494ed8a8315022b0bab39de52472b1f9cdf19af5ba63131a8f8fdb7e",
+      "converted_sha256": "6c37d82e0544528bc2a1a3674d45022716e1986b1cfef382f66d1a797d8696ad",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N16_Q128_f7_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N16_Q128_f7_th0.npz",
+      "original_sha256": "8b536ea08fa4d979a69f9967dd5a275a666c98238fcd2477c793622bdf351395",
+      "converted_sha256": "1e557e125c088e21318640598d2641b3db32a002958bc2a8a6e4c1162eee1ee6",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N16_Q128_f7_th20.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N16_Q128_f7_th20.npz",
+      "original_sha256": "0bd2e6d1c86c82e74a79ea162b68c59a6fe94bd2a3d3850625dc0df2dd6d394a",
+      "converted_sha256": "fa7121f72be6c53ed922d4d298f8211e75ba1fdccbe28ed13a1108bdc68ca8f2",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N16_Q128_f7_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N16_Q128_f7_th40.npz",
+      "original_sha256": "037e1102397e2416b34431e1f74cffb37903713062da85b5945012ff19677b2b",
+      "converted_sha256": "c232394fcbfa1067fe3daf73f41b4c0fe437961b16f328f81dbf36f45e6873aa",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N16_Q128_f9_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N16_Q128_f9_th0.npz",
+      "original_sha256": "4b078cb31c5f2a478d98043d31a2050a320f47902c20a88afca880d558095b0f",
+      "converted_sha256": "866a67af6c5ac9716df4fc45d5a86d63344d63dec3121f596deeae9c457c29a7",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N16_Q128_f9_th20.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N16_Q128_f9_th20.npz",
+      "original_sha256": "73bc9e6b59911dd67c43e100cafa229cc27a709626819471a39c3c1a5b982fe7",
+      "converted_sha256": "0a4a3d7941c5b0c6b5a3e296613184d7af0aa1f0ba729dc51cdadb83eea0c357",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N16_Q128_f9_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N16_Q128_f9_th40.npz",
+      "original_sha256": "2e451f02b2853dd916b7a3693f2ea1e6d3dd82ca39e53bf25c600d317a0a0871",
+      "converted_sha256": "0aaf1e0234b4e1626fb0eef1a34c69aaa7bcba9e77552fc76d1d9a412c493e08",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N16_Q96_f5_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N16_Q96_f5_th0.npz",
+      "original_sha256": "df34e620c3c0c776a9044ac9a7add23e45446897ad40520c457f512e6a406aa2",
+      "converted_sha256": "c5b1c76696fcf1b6a5d3ec29c1da72ef74ccb5e6d6144efcd74279815f3e5067",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N16_Q96_f5_th20.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N16_Q96_f5_th20.npz",
+      "original_sha256": "83a371ea8aae5152549fe4d0b7f7af9a54f21346e9025fa70acde0c62b824808",
+      "converted_sha256": "124bb01700bc19856a3153d90a768e3bb77463093bb9636509be259d17986f0c",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N16_Q96_f5_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N16_Q96_f5_th40.npz",
+      "original_sha256": "19bb89c6d668ecdb64b4e5c8f36cc3266ca4adb043b330eca417d2153147a4bc",
+      "converted_sha256": "a65c0e7e7035a2f12a6bdafeb18eb1bdb11f72b30fbadfd0d7c761f0bd702718",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N16_Q96_f7_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N16_Q96_f7_th0.npz",
+      "original_sha256": "339a87a3304b26451597b8aef959c7ce2424ed3b38f13c4e80c05972110970fb",
+      "converted_sha256": "e1e7cea6cbbf6b735e8f0d65f2fa10b6b3f0b00caf92fc533903b31ab483d56d",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N16_Q96_f7_th20.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N16_Q96_f7_th20.npz",
+      "original_sha256": "ea7442c6329a6cab77dde732131d8a257a60544e0af004504281149fd7cb6ed7",
+      "converted_sha256": "fdd327a82390ac3832e8971fb2c239600dbada15066872876e17899215f2f345",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N16_Q96_f7_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N16_Q96_f7_th40.npz",
+      "original_sha256": "4f665470cdce8f08c0860170fae7201515e8c12cf6ded077cd2b9caa98f9961a",
+      "converted_sha256": "5235ec0cb85a553489285f2c6738ea1e48a3484b5a361e7e53aa1df4b8c601cb",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N16_Q96_f9_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N16_Q96_f9_th0.npz",
+      "original_sha256": "d95814fef127e0551fd06fb18923657c271e4a654b16f4f5be95925bdb9d8c0d",
+      "converted_sha256": "8889192e5e6585ac3558dd85d8aeed7d7ae8a736f272ee4c3f514d194f7d83d8",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N16_Q96_f9_th20.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N16_Q96_f9_th20.npz",
+      "original_sha256": "9933f341fce5d54842e396e14e7751b5f902caac90cb24ae410bbd1773748113",
+      "converted_sha256": "be7ddc7c59dbebf4f79f2a0756e7faec3ee1db2de19458f3d1bd9479be417249",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N16_Q96_f9_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N16_Q96_f9_th40.npz",
+      "original_sha256": "098999649afa5c06ab25d786c7adf5aa36ec994a8a97085b8b5fa6f551e66806",
+      "converted_sha256": "65f715ec4a53ede81373f6cebc0b05f447084e18e5bdfc12277c2a466155fe9a",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N24_Q144_f5_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N24_Q144_f5_th0.npz",
+      "original_sha256": "8ec5eae06082af54d4058d68d0e6ce004f1478a42643d0ab7b11697e2e614e89",
+      "converted_sha256": "4e9caf8c65bda19cc99ab620ae77bd2f925881e8604e0b0500e6df8a503fad12",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N24_Q144_f5_th20.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N24_Q144_f5_th20.npz",
+      "original_sha256": "3b5bf334bca29a27761383d9ef38ff041efca6966e07474e4781cfdfbe2429d5",
+      "converted_sha256": "2ebfbbc41d1d670e2433072d30d38828fd8c49d68b468bc36bda0152cbf45892",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N24_Q144_f5_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N24_Q144_f5_th40.npz",
+      "original_sha256": "1c69cc0d9a7d6d36dce8cae3c4721b3b3f4973fc5e2c4cb0f4d37e604eeb4acd",
+      "converted_sha256": "9d6eed7af4c68ba3fbc004aae1d7740309644527a0a455f0e715904693037b5f",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N24_Q144_f7_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N24_Q144_f7_th0.npz",
+      "original_sha256": "fd5cd142db5cfd13b26ac7de5c9b88e6b8a13bd433a06501c6fea0e9d654fbc8",
+      "converted_sha256": "e023f8a336d25c523c0265595550202a495c12e2bdc9d26b53c9287d34e95719",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N24_Q144_f7_th20.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N24_Q144_f7_th20.npz",
+      "original_sha256": "1a86af9b3f19ee890cbdf2d6aadafb9f55774ab9e6d554c89ca3e989578f526f",
+      "converted_sha256": "4b37301db2a7511eaac3afb3b8625e7403a863b4437135f7709a68ad543e37e3",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N24_Q144_f7_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N24_Q144_f7_th40.npz",
+      "original_sha256": "c526ccd61fa8b3d838234ed4d9f8147f1c272d7d3241fa633af4bebc78ad1abf",
+      "converted_sha256": "0386d8132b535978d46e5c83c869425df48c25370e4b22bbe6b386f601d2dd1d",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N24_Q144_f9_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N24_Q144_f9_th0.npz",
+      "original_sha256": "8b680dd180db6aa1e30d1cb846f42748e6e5c8f2bf98cad566a85676bf4cac33",
+      "converted_sha256": "252b6b512141cd008b66a736ea96e7c6404b6b46852cef64584955fdc68d0455",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N24_Q144_f9_th20.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N24_Q144_f9_th20.npz",
+      "original_sha256": "33291cc1b0bd57683b98398f5c7b078af07f0098cfca3e1f9f7b8bb15726366c",
+      "converted_sha256": "95a348fffc620520e826cfc716a6394efef23d63553ab7cad89d0b99115739b5",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N24_Q144_f9_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N24_Q144_f9_th40.npz",
+      "original_sha256": "b058764640993369fc759882e6e3e278bafd7d9ad6e6ad410403efffdfe6d65b",
+      "converted_sha256": "1b100e0726c918c4ffb9b9f2664d094a957984a5d856a65fd53476813129015d",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N24_Q192_f5_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N24_Q192_f5_th0.npz",
+      "original_sha256": "f3250f14d709633450a6fa1ec0d52e08c829cd8195eb4c0fb366a4418d58a691",
+      "converted_sha256": "a6ff4641a654578f0194fef66b47e539c4930ec58686be929638654a719b287a",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N24_Q192_f5_th20.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N24_Q192_f5_th20.npz",
+      "original_sha256": "00b644b5839a8869ba01e66ddbde4f01dcdd18612ad427e174feda38d8dae1e1",
+      "converted_sha256": "2f097829cb06cb7406dbf345bf49237a16ff0c72fa522ca62a8d634e07f63bbf",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N24_Q192_f5_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N24_Q192_f5_th40.npz",
+      "original_sha256": "64c2aaeb2d5038fae1334a1b9fc185de1f96f95057896e21a18e4e21853ba2b6",
+      "converted_sha256": "ecdde11f07d68d57d2cc9eac94fab99588a1512876f1aef3b3778aef0663907e",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N24_Q192_f7_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N24_Q192_f7_th0.npz",
+      "original_sha256": "95fab185232eab26af44217890d1e88168c2034f6ee67701c8ca84f0698ffc9c",
+      "converted_sha256": "6af2d3bc4993ed3f4df70dec00a192d462131be0f7f75809c0d5d82f3c075a2e",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N24_Q192_f7_th20.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N24_Q192_f7_th20.npz",
+      "original_sha256": "09b5014626f13bbff518ce38119704cabb3dbde3ccdf694dbb16003f80821489",
+      "converted_sha256": "b43130590771d6fb9341470868996d73538a5165126891fb74a4ed81763b1391",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N24_Q192_f7_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N24_Q192_f7_th40.npz",
+      "original_sha256": "2578877b879c0499f563d5d3718b0d6a0529520792e5c535d9ff9b26763bbd05",
+      "converted_sha256": "0c38b05325f63c69fdacde50cafa43e677a968d683b30149830d42b624bc8dad",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N24_Q192_f9_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N24_Q192_f9_th0.npz",
+      "original_sha256": "57310d8f991de0a4dd75a306a9d589e7aa65f3e765ca3df464ff1039200d7cf3",
+      "converted_sha256": "1c06fd3fd09f08d551d83ff805612bfcf917e83e814db340718527f52464f9cf",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N24_Q192_f9_th20.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N24_Q192_f9_th20.npz",
+      "original_sha256": "02f27b84cdea7a64bcdc50baf313faa38a14e73666ab5dcda4ddadc67d7150c6",
+      "converted_sha256": "a469c1a0deeb878936ff7cca81b3f0343862f489b14aa231f8af94513ea9e4f8",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N24_Q192_f9_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N24_Q192_f9_th40.npz",
+      "original_sha256": "3f49d28aa5a312edb153ac2d6f1fd7d4aa1f4ee6d84736b0a54c4286f20169ad",
+      "converted_sha256": "7ce0954003001fe8bffb05d929055252b5e124f6151f12ef84f73a36bf117233",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N32_Q192_f5_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N32_Q192_f5_th0.npz",
+      "original_sha256": "f1c77b049a1b9fb3c7a7ec66dea8938632024aa071d52a2664c93fd4406c5933",
+      "converted_sha256": "b2cba69e8afbf9172ac1012766d3f440c4ab1b0182c36c017598893eb5078eca",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N32_Q192_f5_th20.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N32_Q192_f5_th20.npz",
+      "original_sha256": "ce8763038492a4d8fc68f30a28dc27cfdbf56bcbcbc656a85a2a788f5796b9a2",
+      "converted_sha256": "c91be9cb9e247efe074993d41491a2fafe20ec57b0d2e13b1b6ebc4e1e797759",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N32_Q192_f5_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N32_Q192_f5_th40.npz",
+      "original_sha256": "a9fdf5b6ef4bab1d33d47258f9db9fc1cf4a7b043f1f0e3b93757fcf76de9db2",
+      "converted_sha256": "b195b84d51b62a5e4f850dab38066e2d1ad31c9356fd4dbaeecec5bda2c9ef38",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N32_Q192_f7_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N32_Q192_f7_th0.npz",
+      "original_sha256": "dbd754ba7479b9a0689d67fe36daa1a5cdb28810a689200f2a056e42fe71111e",
+      "converted_sha256": "60879cc6ef93af0c3060a74c418c0421174a18a314d4ffce9514039b5cdb7fa4",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N32_Q192_f7_th20.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N32_Q192_f7_th20.npz",
+      "original_sha256": "bdf3fbc5ced024db5e17270f949a0625870a49ca2ebe19dc51bc78d198895fce",
+      "converted_sha256": "d8e01096141e5b58051756e5c66ea03480cae595be3bae436c3c7eb30c94bb92",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N32_Q192_f7_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N32_Q192_f7_th40.npz",
+      "original_sha256": "c077e6f294121d59fd93f9bdfa24c3bb0bb1f87507999a6d20de94d00166d7ed",
+      "converted_sha256": "432cec980150a4ea413a44d97865c84546165c5ffece34a80fd525540a3b4bd9",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N32_Q192_f9_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N32_Q192_f9_th0.npz",
+      "original_sha256": "d218436bd99713d20b8644869474d91fdd7b5b99b761c52c589d2e84ef01a741",
+      "converted_sha256": "af54aa04bc72732dbf5598092dc53e9c8b0768e0e5a979322c7bf760f3b8431e",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N32_Q192_f9_th20.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N32_Q192_f9_th20.npz",
+      "original_sha256": "aeeadcd39d799d73e0db546a06db8540d97693b98735a8929b25e973c39b8a0a",
+      "converted_sha256": "cd8f4f44b007a0180dad76a8e10cfd71d1d6578659a679cc31d72704c38b570d",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N32_Q192_f9_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N32_Q192_f9_th40.npz",
+      "original_sha256": "4d16408cfad5ee471bab4878541f0ecbc677cf8687bbeff1ce416cfe9fffbd56",
+      "converted_sha256": "9e736e179fdab67c656675fe82bffa30f63b8a254a3ab7f2572de498725ea443",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N32_Q256_f5_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N32_Q256_f5_th0.npz",
+      "original_sha256": "1ff56cae989f17bd027edd6d0b4ad7545203b3690e1e45555b11ecf5b24c38aa",
+      "converted_sha256": "4e759b8194c8321864988ddf7906cebbc6fa0422658af2930b28317d3c032f72",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N32_Q256_f5_th20.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N32_Q256_f5_th20.npz",
+      "original_sha256": "e45a049e94514f5111a7b076a43dcf85ca5bb93bc32b8edc998976c78bb02e1c",
+      "converted_sha256": "dfd9134355bcc3631a7d23e7bf72475451029194abdc73e430f53a55a3012e77",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N32_Q256_f5_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N32_Q256_f5_th40.npz",
+      "original_sha256": "6551045bf2685526e9bb8fe0f1fd9974696e2379a92f01c07f8e45876bfa4360",
+      "converted_sha256": "bd0b75732bf3327a735995e0ce0b0fa1186aa694df76f5940f80780320bbfc8f",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N32_Q256_f7_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N32_Q256_f7_th0.npz",
+      "original_sha256": "bf7a33feea66e340713ef2fe96c04b3b100e0bf4a5527b1bba6b2b6076907002",
+      "converted_sha256": "f495db93d9e3e3393403f2723b4940a0fd755e326925a58488c1333c2e2bc267",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N32_Q256_f7_th20.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N32_Q256_f7_th20.npz",
+      "original_sha256": "8e2231dfb1e9d636d3c6890acd10b12ed94e9e8320cc2b2d357b2b0e1dcfefab",
+      "converted_sha256": "a82bb385804b0544f7d04454d0fcd0a15ffd70dbcb37baebd98eca4e166193f5",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N32_Q256_f7_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N32_Q256_f7_th40.npz",
+      "original_sha256": "e8ae66d392c67d8dd227861a317f74bbe998ef8d351ce1794ca512ad2afa9c09",
+      "converted_sha256": "86ba5ae33cac9b7e4a8989d9bef3eadc68306eefab579903ff7e2d9c4ab322c3",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N32_Q256_f9_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N32_Q256_f9_th0.npz",
+      "original_sha256": "036b3b3cd99348813e22e7541045dc5ec9177c62eab071155b789cd5b7f9326f",
+      "converted_sha256": "9c4f68fdb40aac63f015788d8f13fd21a66e7d1580fd73424688f4c27f3477dd",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N32_Q256_f9_th20.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N32_Q256_f9_th20.npz",
+      "original_sha256": "f5168529413936f9b6995ad8d7c72b8b01c87d005eb2aebb749f24e169ae483c",
+      "converted_sha256": "0dae0b1ce14c388ec7f95a3c248d909e781f968be9a64926b10b62333d53c18d",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N32_Q256_f9_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L2_N32_Q256_f9_th40.npz",
+      "original_sha256": "113ef1d884a8a1bdd85391efc4a4c0b898c0c52ea7b8d5ebd1e54384f9af689b",
+      "converted_sha256": "97f40b1c6cc73b3d44798a632787fbd12d7e1ae281e0e4b9d96188917f6a56ce",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N16_Q128_f5_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N16_Q128_f5_th0.npz",
+      "original_sha256": "ff2bca85ae021d6064d97eb487aa7e4a605f565eb9ce233aee367636508f852d",
+      "converted_sha256": "c4de89d327761c803764ec0210834c96b2411697bdaf1c63861ba86a87f3aed3",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N16_Q128_f5_th20.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N16_Q128_f5_th20.npz",
+      "original_sha256": "846487d308ed1ea8db23fa0bb486dc42b8338201836e09ef30a7c31c065192c4",
+      "converted_sha256": "bbc04d04f987f63b80c62bd9e8e878e61b71e756eaffaf6850b253f4c718beba",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N16_Q128_f5_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N16_Q128_f5_th40.npz",
+      "original_sha256": "3d5e0535e65e96938be8fc8dddb4dff419bd447b0782d99838d952d6dec17948",
+      "converted_sha256": "f817e75e48846d66b94d9a1a3afabd52439bf6dffd20ef3e48ccad0b0ac0464b",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N16_Q128_f7_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N16_Q128_f7_th0.npz",
+      "original_sha256": "6c4ae6bf134a6863c4e0e7c368d806f6a7fa873c31555f51c5cb37e9839df3bc",
+      "converted_sha256": "71c9cdfba417567f861b682cc8083feaabdf1a8f579bc75d2b68f40340a1e999",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N16_Q128_f7_th20.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N16_Q128_f7_th20.npz",
+      "original_sha256": "6f671810dc6857e5189049184fc66ddae428b70757a44abf5d9fe569f4b5a7f8",
+      "converted_sha256": "2bd6c88bb5e061d34a6e9dc39d554f1f538846e6dc979c71f59ca336398e5b5a",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N16_Q128_f7_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N16_Q128_f7_th40.npz",
+      "original_sha256": "cb904c79a0574189d714f951e16456ad9f56813120886341d5b5658a659906d8",
+      "converted_sha256": "46f0387d787abd3d80131b392f3650b2a15bd2483d7f23c910c8ca75c4629a0a",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N16_Q128_f9_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N16_Q128_f9_th0.npz",
+      "original_sha256": "2cbf12d4636db43fc13bb802c2f34deefd874a7f8f59b4f3fd5c8c306c2df0de",
+      "converted_sha256": "90ffc78fd2f5534a1d273939561c7018f45e0f544982d438b1d7e681466e732b",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N16_Q128_f9_th20.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N16_Q128_f9_th20.npz",
+      "original_sha256": "4364ce3a13c26d22c09f8118194f1e138db4e98aa9a404afcb077a5e95df2b54",
+      "converted_sha256": "6edbaf4cb8c27e69283fba4bac2c3ff145d811d833a51ad8c385d2703da6cbc6",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N16_Q128_f9_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N16_Q128_f9_th40.npz",
+      "original_sha256": "1bc0458eb86d8b0d079db294fb46e30dd8700db3fbb8614d88561500ea067cb1",
+      "converted_sha256": "941628e59df7d261c032ff2708dddf63c549b37b4d5cbeec999935ba60829589",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N16_Q96_f5_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N16_Q96_f5_th0.npz",
+      "original_sha256": "d08c2a9cc595695acb3499e6c927e5b17210f0729730fe92493a566603b0a918",
+      "converted_sha256": "bb4e77bcb34a18e02946a021f44aca1abf0dcb5417eda1423eacd6dea061cf8c",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N16_Q96_f5_th20.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N16_Q96_f5_th20.npz",
+      "original_sha256": "6165e5940e525ad7d34993df1be127b11ec8382e3af67924641d5af7b209e630",
+      "converted_sha256": "3950940d7c3e6ac6cdcd37d2c9fc3eebd342727fd074f21d6de3226a19fe24ce",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N16_Q96_f5_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N16_Q96_f5_th40.npz",
+      "original_sha256": "2f81e56b889b2f75a7f8b25acc17dd7b9572c4fdff57573ced3d9c255929e6bb",
+      "converted_sha256": "4333bcab78b67281c35157f6ac932902c1b22d9fce8a110d054ddb17e59c6e4e",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N16_Q96_f7_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N16_Q96_f7_th0.npz",
+      "original_sha256": "6e8f02491fa2503e42b5a0f1b2be3a3cd3cd5e8037c68e4025345d12b7af2f70",
+      "converted_sha256": "b347bbd1f6da4f0c3fce6d746aae3fdab0c60644a1ff7cce9b05baa33e3c64ea",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N16_Q96_f7_th20.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N16_Q96_f7_th20.npz",
+      "original_sha256": "4fc77bebd9dfc892cad075a2371b15b919dcd31f150b79c73bc890ecddc25f18",
+      "converted_sha256": "c673d45f0399764c709662748f194831a59611dc4da016f215e9b844e539106f",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N16_Q96_f7_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N16_Q96_f7_th40.npz",
+      "original_sha256": "3daaa2de3e5388275b32b296c553255e3bc0cddc3a0a207bd7520f0899e4d06b",
+      "converted_sha256": "9ae0a6149d06005c2de3605efe02613c956433451c9dc0df16d1fde3f3bdcca0",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N16_Q96_f9_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N16_Q96_f9_th0.npz",
+      "original_sha256": "4af8a9b938e3992eef83da475ea6dc0903e918022c2605fa054e8f7b48f1d781",
+      "converted_sha256": "19082317d94d2f8daf1158be29efee739baf740a5718a7958e0ac7ef719c0475",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N16_Q96_f9_th20.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N16_Q96_f9_th20.npz",
+      "original_sha256": "6073f43d1febd6f3bf419d3fc84a0267ccaf473ebde6cc88e15c600ef6df16f0",
+      "converted_sha256": "4519662bc2fb1a2754a1584bb88fbb6eb409a2a46cd5b715c23219593766af86",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N16_Q96_f9_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N16_Q96_f9_th40.npz",
+      "original_sha256": "57e63d962de86dee4aaaf4b7594ff5207cf1cf93d85c111387f2afbe00d2c96b",
+      "converted_sha256": "81eea0ad772ea1514b2cbba0e13a6980e434cfeb197c8199bbf75119d9ec263e",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N24_Q144_f5_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N24_Q144_f5_th0.npz",
+      "original_sha256": "6e38d2744be2e8bbdeac3a9a95c401e81fb02bb730102660c5f0fc5b35819197",
+      "converted_sha256": "2c6c5179cf14a4736148e75aa37064ce8236b8cac156ba1a7631ef24755cffcf",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N24_Q144_f5_th20.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N24_Q144_f5_th20.npz",
+      "original_sha256": "ce7d98a11fc3b583a470385f8d5fbb877bd7d74e892f5f5e20611d7be3b882ed",
+      "converted_sha256": "c0fd34e22f8811ba80881916d10ed49607adb0817de7000d3e3661dc6b68e9af",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N24_Q144_f5_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N24_Q144_f5_th40.npz",
+      "original_sha256": "5d18fab5b4413e550504dbc1d2b4efcf1c7c886eb39cd78a2c21c1ee6f508f33",
+      "converted_sha256": "d7de9f8645c3051f422eb072dda63f126ceb42a56f78545c9fab1dee8cf4e289",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N24_Q144_f7_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N24_Q144_f7_th0.npz",
+      "original_sha256": "631e9c12e3ff41a20ca801f067fe2f3b9d3eea83caf45bc6e27dd8de609a774a",
+      "converted_sha256": "fd992341010554ba5bc1f1b5d45cdf1713cfd5d67e905c90d3353f5ddf5ed6f0",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N24_Q144_f7_th20.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N24_Q144_f7_th20.npz",
+      "original_sha256": "892b26bb94165f84b2b8347acb72c29efb60fdf7ae64478e9988c1e89c87c7c9",
+      "converted_sha256": "b1c4d81952f459affea76a287cbffa4131971cd40e35f3a95c5b917387acf129",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N24_Q144_f7_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N24_Q144_f7_th40.npz",
+      "original_sha256": "74f41787c0adb01f0dbf08d41cae2b7d834940dde59b039f0d4b43c520cffb7f",
+      "converted_sha256": "dff3d1ece8a5129dd2809d5d92d21ffc09b84e326c714fc4b9546110149df0b7",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N24_Q144_f9_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N24_Q144_f9_th0.npz",
+      "original_sha256": "ee11ab30c38dc43a529687d56b4653e05da1e3bf42a5ac4149bec30c67c159f1",
+      "converted_sha256": "56df2d212b323054e051730b7364c7793cc6c56725451d16eccc7f68f9884e0b",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N24_Q144_f9_th20.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N24_Q144_f9_th20.npz",
+      "original_sha256": "1e201d58d74c7bd0a34492bef88a48c3ae87148cf81c8169169f7b5095911f3f",
+      "converted_sha256": "717ead86eb40c2c4c7f4253aebe23bff2aebcb6a5c3dafce495302108870a06f",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N24_Q144_f9_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N24_Q144_f9_th40.npz",
+      "original_sha256": "2c39b3ab6b7f94b0275f94d594fa953b024d779ca68a8ce9f716b71c1377a717",
+      "converted_sha256": "2736aac5d129e81566e43646f153a84f07b6feae134c1fd6d9b8116fc058b139",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N24_Q192_f5_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N24_Q192_f5_th0.npz",
+      "original_sha256": "eb93a3dc2d8278e13dd678c218198d77b9abbfdde651323ee068349ea5e2c8e3",
+      "converted_sha256": "ea82d19a5087968672d71c992ddca6ed0227b68d35e4e52d6a4950cfed891943",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N24_Q192_f5_th20.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N24_Q192_f5_th20.npz",
+      "original_sha256": "9c3c91627efd0db6dc13bf6cd1cba5103f21ba5037a195cd7a836adce0b1155d",
+      "converted_sha256": "f2a63bd3bfe78089f2311b330ce60ebe2d8a45b5c21b69625e2d6f957773e3f8",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N24_Q192_f5_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N24_Q192_f5_th40.npz",
+      "original_sha256": "c5cd7695b1d8e625ee2577ce58df906e5b8f5da35d42508f02674f8dde7ce8bf",
+      "converted_sha256": "a47281c86beb87ffcbc2951e7fdca477d7e45f62b250d4d6673ce274c0b7df5c",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N24_Q192_f7_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N24_Q192_f7_th0.npz",
+      "original_sha256": "3edc492b0722d256bd02f4f55141bafb654f24329362279e69acaca25b7b4b64",
+      "converted_sha256": "355cbc0e7079ed155d805a9429d5332aa236f9b2a2f4ed944bbe8e77334cf0b3",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N24_Q192_f7_th20.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N24_Q192_f7_th20.npz",
+      "original_sha256": "781ae27087c050ec1521910294972ecdcbca853014d629dc1e4aa3a575215c4c",
+      "converted_sha256": "2a760b01668868d027d76dcad9a947075e2488a72f840ffae83224a3b14b4fea",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N24_Q192_f7_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N24_Q192_f7_th40.npz",
+      "original_sha256": "2dab91d761ba6fba9ad8f6721407bf91e7cc0d19235080c687abadd2a5bba463",
+      "converted_sha256": "ebcb76e8ac0b1226af4b2497076c8de3b341b4f25490606a64d51664c4219379",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N24_Q192_f9_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N24_Q192_f9_th0.npz",
+      "original_sha256": "679c9d9ab9fcbf42b0367f380f7e030655c1117591f9126396d113a8f72325dc",
+      "converted_sha256": "f087dedf050b1632204ebcd464b6b93bde8d56e7e7154d37bffa51105d75b464",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N24_Q192_f9_th20.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N24_Q192_f9_th20.npz",
+      "original_sha256": "425b3dda8081c72fcacf3dd1d7afc619887ce4990e1b62878e442cc289a84fec",
+      "converted_sha256": "98cbcea7a195ab5778df41ddd1c6a1881af27f5cc410db5c7279264866e50132",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N24_Q192_f9_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N24_Q192_f9_th40.npz",
+      "original_sha256": "eb52484a451abd5b3b51ea3f5ffa00df2c2854bed9df57091c1a8b73dc2442b0",
+      "converted_sha256": "36ff4bbf3432d2451514e2f6f759c7f982eefde351f932ffdb8e09a52a9b643a",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N32_Q192_f5_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N32_Q192_f5_th0.npz",
+      "original_sha256": "bed29c21b7dc24d9093d069dfe65ea862d756130e7487a06c6f093771b6f9912",
+      "converted_sha256": "a560052814643bcbc192f46a89b506c283a1cd7d1c69f3fa148a16815a8d5ef3",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N32_Q192_f5_th20.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N32_Q192_f5_th20.npz",
+      "original_sha256": "f9fc74d7f3e1f5f8d8762462b2a84b699f6eb7f2bd6334e80a87ea5d04e13aec",
+      "converted_sha256": "0be1c359c4b217a11559c8dfaad022dd90a36f022ada65f4cd257739cc0e5480",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N32_Q192_f5_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N32_Q192_f5_th40.npz",
+      "original_sha256": "fc8373a64f47df32ca9c78a15bdf1adff8d098b5b425f4f222ac7089b34d210f",
+      "converted_sha256": "5c09a0c16f4d5042275049373516d51117631d58e08405d75952b6211f1d3a0e",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N32_Q192_f7_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N32_Q192_f7_th0.npz",
+      "original_sha256": "d2b7fc53ab108d8354b05c1e43c20fba4f9c5793190251ccf3ee50342f8e7234",
+      "converted_sha256": "f62ecd36b5d3aa10b4326262288a1617db604d490b6876c32e15b9c75409e5d9",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N32_Q192_f7_th20.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N32_Q192_f7_th20.npz",
+      "original_sha256": "deba65662edf07e5dacc1bdb82126983a99a9f3c00d0f85a71e4b40e1e14246b",
+      "converted_sha256": "70342faf3f352c06f159431e0590a7bff84828ad451808b4562b5a8afd634353",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N32_Q192_f7_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N32_Q192_f7_th40.npz",
+      "original_sha256": "4d497ace46db92efeedf54f0c138271389bdf5a7809fc4b505257938c6cdbc0d",
+      "converted_sha256": "1eec94a32ce5a2d6f9ecdd18166539112e7b0426f082cb9a1db361ccd498e2ce",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N32_Q192_f9_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N32_Q192_f9_th0.npz",
+      "original_sha256": "210ab9b586e53ca6ccf7eaa24a0beb1bfa80fadf2bf285f7451b12a90b8265f1",
+      "converted_sha256": "9459524a60a7fafe06758322764595e98af17533ebb555ed2fe5b25de7b2047b",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N32_Q192_f9_th20.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N32_Q192_f9_th20.npz",
+      "original_sha256": "70a1806c4372c1da68790dec77a8ae5aea83cef78e050a0d298c769a01ff51b1",
+      "converted_sha256": "f41629e3378497129aaf393cb126764e265ad7cf2a39371cb25a421908191769",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N32_Q192_f9_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N32_Q192_f9_th40.npz",
+      "original_sha256": "61ec8b36fce29f40ea34b7ca8e154a6a88a590503e935a586346cb7fb17f42fa",
+      "converted_sha256": "7189d1d02b155dac55f50516caba6470015358847b50fbb1f4bac9981b350cf6",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N32_Q256_f5_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N32_Q256_f5_th0.npz",
+      "original_sha256": "cc419d3606684607c9ecc1063607cb8675069bb9acfcb9705309f60e088571a9",
+      "converted_sha256": "8f85345916b66fade764880f61b3dc218ed9e7aec3b543f865c127caa74a7608",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N32_Q256_f5_th20.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N32_Q256_f5_th20.npz",
+      "original_sha256": "0d98d642efe0688ccdcbda69dfd19400f69d521b69f107d1af424c0334ea9092",
+      "converted_sha256": "edb57cd48a1f8d3db4c830c61b256f0c49e4eaf15bad85462979e75edf1b9a58",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N32_Q256_f5_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N32_Q256_f5_th40.npz",
+      "original_sha256": "12c4f66dbfeee216f23eba06826db46289827e83fa7e2ac73324c72465981e45",
+      "converted_sha256": "4c26d95107beee0156cf1b8776c47052da4bc64b401a68457a7850003470e086",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N32_Q256_f7_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N32_Q256_f7_th0.npz",
+      "original_sha256": "e751102d3b682936d616be0b28390cc6d5cee7c82b8b611dc93f7076528ad643",
+      "converted_sha256": "1e64cd135fda98504048b5a0bc525becb0a5e87ca13f23b59bf6e515eefca313",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N32_Q256_f7_th20.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N32_Q256_f7_th20.npz",
+      "original_sha256": "606c729e3bdda1b052c8c3e6d2fa07cf25464eaccd7d7aab6820caeebf25a997",
+      "converted_sha256": "04ebbaa4b8142fd7b78610507b9ccd0025e71b6fce10b63e4f927de10f890902",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N32_Q256_f7_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N32_Q256_f7_th40.npz",
+      "original_sha256": "99e5765a3b31932aa356e745f217437bc9fd94c4121fba2e437da7e6679a8503",
+      "converted_sha256": "c9fb1c4a48624810460f3cb569a7ee63f54bba8544db75d1ac75d592367b6c05",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N32_Q256_f9_th0.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N32_Q256_f9_th0.npz",
+      "original_sha256": "a26e67cb85b2769ffd352a867eafbc3524067174f3409e3b4fabe62657673939",
+      "converted_sha256": "59c7e575287ee871f6ea9ab00e403e5d92b9b0b541039712b8c7e234707290a5",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N32_Q256_f9_th20.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N32_Q256_f9_th20.npz",
+      "original_sha256": "abd4ea1eff77e529e16a94a3564a7997dc85f64ea7b6de4881af034bb6bf3057",
+      "converted_sha256": "371320304c5437b605783d121ed98880c362e016dacc33efdd6cc767fb167add",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N32_Q256_f9_th40.mat",
+      "target": "output/awpl/revision20_metal_paper/stack_validation/stack_L3_N32_Q256_f9_th40.npz",
+      "original_sha256": "910686decab1e3338ef4d55057e73f9abba52e2312325ba5a98f00c256195ec5",
+      "converted_sha256": "5c7971020698b0fd505fe972fc33f488d6ed8aac8b905a203f7f859bae2897f5",
+      "variables": [
+        "Scascade",
+        "Sref",
+        "caseRows",
+        "complete",
+        "gaps",
+        "info",
+        "layerS",
+        "maskIds",
+        "usedMasks"
+      ],
+      "all_values_equal": true
+    },
+    {
+      "source": "output/pec8x8_trial/dataset.mat",
+      "target": "output/pec8x8_trial/dataset.h5",
+      "original_sha256": "31b8eeaac81b6264ec06ece16cd13e87e7fc0a5ccfcefd0b22456ed863e9fa91",
+      "converted_sha256": "bc4729f6dd1e4ecef148c9f46e5a66fdd803ce82184d501734cfb2562879e176",
+      "variables": [
+        "masks",
+        "active",
+        "currents",
+        "responses",
+        "freq"
+      ],
+      "all_values_equal": true
+    }
+  ],
+  "converted_files": 323,
+  "all_values_equal": true,
+  "elapsed_seconds": 416.76120559999254
+}

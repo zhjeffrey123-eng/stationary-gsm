@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "Please cite the accompanying manuscript and this fixed release."
+title: "Stationary GSM Extraction for Periodic Metal Pixel Metasurfaces"
+type: software
+version: 2.0.0
+date-released: 2026-10-10
+authors:
+  - family-names: Zhang
+    given-names: Zhifa
+  - family-names: Chai
+    given-names: Shun Lian
+  - family-names: Ding
+    given-names: Xiao
+repository-code: "https://github.com/zhjeffrey123-eng/stationary-gsm-awpl"
+url: "https://github.com/zhjeffrey123-eng/stationary-gsm-awpl/releases/tag/v2.0.0"

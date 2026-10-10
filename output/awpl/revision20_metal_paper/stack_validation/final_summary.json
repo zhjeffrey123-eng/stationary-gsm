@@ -1,0 +1,40 @@
+{
+  "status": "complete",
+  "reference_conditions": 108,
+  "cascade_comparisons": 432,
+  "reference_condition_count": 108,
+  "cascade_comparison_count": 432,
+  "M0_amplitude_error_max": 0.5330492817131921,
+  "M3_amplitude_error_max": 5.478555527202667e-06,
+  "errors_by_M": {
+    "0": {
+      "two_layers": 0.5330492817131921,
+      "three_layers": 0.5152731482214318
+    },
+    "1": {
+      "two_layers": 0.003257000194589115,
+      "three_layers": 0.0030648924989441903
+    },
+    "2": {
+      "two_layers": 8.71517525757751e-05,
+      "three_layers": 8.633334340627708e-05
+    },
+    "3": {
+      "two_layers": 4.359741868605741e-06,
+      "three_layers": 5.478555527202667e-06
+    }
+  },
+  "amplitude_error_definition": "Frobenius norm of the complex 2 by 2 fundamental front-reflection matrix difference, not the largest individual entry.",
+  "error_scope": "Maximum over all fixed 2/3-layer conditions, N16/24/32, Q6N/8N, f5/7/9 GHz, theta0/20/40 deg, phi30 deg.",
+  "maxenergy": 1.4536680369808294e-14,
+  "max_energy_defect": 1.4536680369808294e-14,
+  "max_residual": 4.626581672711848e-14,
+  "max_reference_residual": 4.626581672711848e-14,
+  "max_reference_power_defect": 1.4536680369808294e-14,
+  "numeric_checks": 4876,
+  "audited_dense_spectra_rows": 1312,
+  "Green_Q_amplitude_difference_max": 0.0002541163006932711,
+  "current_N_amplitude_difference_max": 0.1819326580979303,
+  "independent_assembly_not_independent_physical_solver": true,
+  "uses_learned_fields": false
+}

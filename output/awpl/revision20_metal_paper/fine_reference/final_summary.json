@@ -1,0 +1,280 @@
+{
+  "status": "complete",
+  "actual_cases": 116,
+  "expected_cases": 116,
+  "full_GSM_cases": 112,
+  "fundamental_input_subblock_cases": 4,
+  "topologies": [
+    701,
+    702
+  ],
+  "frequencies_GHz": [
+    5,
+    7,
+    9
+  ],
+  "theta_deg": [
+    0,
+    20,
+    40
+  ],
+  "phi_deg": 30,
+  "N_common": [
+    48,
+    64,
+    80
+  ],
+  "N96_scope": {
+    "f_GHz": 7,
+    "theta_deg": [
+      0,
+      40
+    ],
+    "topologies": [
+      701,
+      702
+    ],
+    "Q_over_N": [
+      6,
+      8
+    ],
+    "cases": 8
+  },
+  "M": 1,
+  "full_GSM_size": [
+    36,
+    36
+  ],
+  "fundamental_GSM_subblock_size": [
+    36,
+    4
+  ],
+  "operator_equivalence_max": 1.19057882308442e-15,
+  "power_defect_max": 1.49412417643269e-12,
+  "linear_EFIE_fro_residual_max": 6.49813679142039e-11,
+  "reported_true_EFIE_relative_residual_max": 6.49813679142039e-11,
+  "true_EFIE_column_residual_max": 1.109219047672649e-10,
+  "N80_to_N96_full_GSM_relative_max": 0.00218918005070753,
+  "N80_to_N96_zero_reflection_fro_max": 0.00177770762325993,
+  "N80_to_N96_zero_reflection_max_entry_delta": 0.0012617025912240517,
+  "N80_to_N96_TE_power_delta_max": 0.00152423845787952,
+  "N80_to_N96_TM_power_delta_max": 0.000249461786833466,
+  "N80_to_N96_comparisons": 2,
+  "N80_to_N96_expected_comparisons": 2,
+  "N80_to_N96_full_GSM_scope": "Two preselected topologies, 7GHz, normal incidence, Q8N, complete 36x36 GSM.",
+  "N80_to_N96_each_case": [
+    {
+      "relative_full_GSM_delta": 0.00195710939074719,
+      "zero_reflection_fro_delta": 0.00174568953204131,
+      "TE_power_delta": 0.00152423845787952,
+      "TM_power_delta": 0.000249461786833466,
+      "topology": 701,
+      "f_GHz": 7,
+      "theta_deg": 0,
+      "Q_over_N": 8,
+      "zero_reflection_max_entry_delta": 0.0012617025912240517
+    },
+    {
+      "relative_full_GSM_delta": 0.00218918005070753,
+      "zero_reflection_fro_delta": 0.00177770762325993,
+      "TE_power_delta": 0.00139728236117487,
+      "TM_power_delta": 0.000195672562308249,
+      "topology": 702,
+      "f_GHz": 7,
+      "theta_deg": 0,
+      "Q_over_N": 8,
+      "zero_reflection_max_entry_delta": 0.0010411527422499172
+    }
+  ],
+  "N80_to_N96_oblique_subblock_comparisons": 2,
+  "N80_to_N96_oblique_GSM_relative_max": 0.00182938629980367,
+  "N80_to_N96_oblique_zero_reflection_fro_max": 0.00178035430397153,
+  "N80_to_N96_oblique_TE_power_delta_max": 0.00147167135494586,
+  "N80_to_N96_oblique_TM_power_delta_max": 0.000143611880142371,
+  "N80_to_N96_oblique_each_case": [
+    {
+      "topology": "701",
+      "f_GHz": "7",
+      "theta_deg": "40",
+      "M": "1",
+      "kind": "Current_grid",
+      "lower": "80",
+      "upper": "96",
+      "Q_over_N": "8",
+      "N_fine": "96",
+      "output_coverage": "fundamental_GSM_subblock",
+      "relative_GSM_delta": "0.00148100077204906",
+      "relative_full_GSM_delta": "NaN",
+      "max_GSM_entry_delta": "0.00124954253574497",
+      "max_full_GSM_entry_delta": "NaN",
+      "zero_reflection_fro_delta": "0.00178035430397153",
+      "TE_power_delta": "0.00147167135494586",
+      "TM_power_delta": "0.000143611880142371"
+    },
+    {
+      "topology": "702",
+      "f_GHz": "7",
+      "theta_deg": "40",
+      "M": "1",
+      "kind": "Current_grid",
+      "lower": "80",
+      "upper": "96",
+      "Q_over_N": "8",
+      "N_fine": "96",
+      "output_coverage": "fundamental_GSM_subblock",
+      "relative_GSM_delta": "0.00182938629980367",
+      "relative_full_GSM_delta": "NaN",
+      "max_GSM_entry_delta": "0.000991280116048018",
+      "max_full_GSM_entry_delta": "NaN",
+      "zero_reflection_fro_delta": "0.00163562628002224",
+      "TE_power_delta": "0.00114756627743406",
+      "TM_power_delta": "0.000109588704146766"
+    }
+  ],
+  "Q6_to_Q8_full_GSM_relative_max": 2.30603607215242e-05,
+  "Q6_to_Q8_fundamental_subblock_relative_max": 7.59899653652777e-06,
+  "Q6_to_Q8_completed_comparisons": 58,
+  "Q6_to_Q8_full_GSM_comparisons": 56,
+  "Q6_to_Q8_subblock_comparisons": 2,
+  "Q6_to_Q8_expected_total_comparisons": 58,
+  "Q_comparison_scope": "All completed paired Q6N/Q8N cases. Full protocol = N48/64/80 at both topologies, three frequencies, three angles plus N96 at fixed 7GHz theta0/40.",
+  "arithmetic_case_counts": {
+    "double": 93,
+    "mixed": 23
+  },
+  "reference_solver_case_counts": {
+    "Active-support factorization with sequential signed-Bloch assembly and double-precision true-residual acceptance": 85,
+    "Active-support dense factorization with sequential signed-Bloch assembly": 25,
+    "FFT matrix-free GMRES, two independent fundamental excitations for each signed Bloch phase": 4,
+    "FFT matrix-free preconditioned GMRES with true-residual acceptance": 2
+  },
+  "physical_scope": "Same spectral EFIE, finite-grid reference. Mesh and Green-spectrum changes are distinct from linear residual and are not bounds on continuous-physics error.",
+  "mixed_precision_validation": {
+    "status": "PASS",
+    "N": 96,
+    "Q": 768,
+    "topology": 701,
+    "f_GHz": 7,
+    "theta_deg": 0,
+    "relative_full_GSM_error_vs_double": 8.290920487578648e-12,
+    "relative_current_error_vs_double": 1.3439155199853671e-09,
+    "max_column_double_EFIE_residual": 6.463002537836927e-11,
+    "power_defect": 1.0363145068235421e-12,
+    "residual_history": [
+      3.6559870599077333e-05,
+      2.0358768911748434e-08,
+      3.652444347199962e-11
+    ],
+    "total_seconds": 58.8689882,
+    "precision_policy": "Complex-single factorization, double coefficients and original double-precision FFT residual refinement."
+  },
+  "fine_fields": {
+    "status": "complete",
+    "examples": [
+      {
+        "topology": 701,
+        "N": 80,
+        "Qsolve": 640,
+        "Qfield": 96,
+        "field_points": [
+          81,
+          81
+        ],
+        "f_GHz": 7,
+        "theta_deg": 0,
+        "phi_deg": 30,
+        "z_mm": 2,
+        "current_max_A_per_m": 0.1648854492285497,
+        "field_max_V_per_m": 3.2915483413946642,
+        "field_spectrum96_to128_relative_delta": 4.4757812942469085e-16,
+        "zero_reflection_consistency_error": 5.551115123125783e-17,
+        "incident_amplitude_V_per_m": 1,
+        "field_side": "Transmission side, z>0, excitation travels from z<0 toward +z",
+        "time_convention": "exp(-i*omega*t)"
+      },
+      {
+        "topology": 701,
+        "N": 96,
+        "Qsolve": 768,
+        "Qfield": 96,
+        "field_points": [
+          81,
+          81
+        ],
+        "f_GHz": 7,
+        "theta_deg": 0,
+        "phi_deg": 30,
+        "z_mm": 2,
+        "current_max_A_per_m": 0.18732584438947228,
+        "field_max_V_per_m": 3.292920462251427,
+        "field_spectrum96_to128_relative_delta": 4.554286250128739e-16,
+        "zero_reflection_consistency_error": 2.2887833992611187e-16,
+        "incident_amplitude_V_per_m": 1,
+        "field_side": "Transmission side, z>0, excitation travels from z<0 toward +z",
+        "time_convention": "exp(-i*omega*t)"
+      }
+    ],
+    "N80_to96_relative_E_delta": 0.001306313800055388,
+    "current_plot_note": "Current peaks near PEC edges depend on grid. No pointwise edge convergence is claimed."
+  },
+  "coarse_to_fine_bridge": {
+    "status": "complete",
+    "actual_auxiliary_cases": 2,
+    "new_EFIE_solves_this_call": 0,
+    "main_protocol_conditions_added": 0,
+    "topologies": [
+      701,
+      702
+    ],
+    "frequency_GHz": 7,
+    "theta_deg": 0,
+    "N_coarse": 24,
+    "N_fine": 96,
+    "Q_over_N": 8,
+    "M": 1,
+    "full_GSM_size": [
+      36,
+      36
+    ],
+    "data": [
+      {
+        "topology": 701,
+        "frequency_GHz": 7,
+        "theta_deg": 0,
+        "phi_deg": 30,
+        "N_coarse": 24,
+        "Q_coarse": 192,
+        "N_fine": 96,
+        "Q_fine": 768,
+        "M": 1,
+        "relative_full_GSM_delta": 0.02978334734941973,
+        "max_full_GSM_entry_delta": 0.024354910262452283,
+        "zero_reflection_fro_delta": 0.026282372824622553,
+        "TE_power_delta": 0.024146521903955165,
+        "TM_power_delta": 0.0013861733174931057,
+        "coarse_true_residual": 1.7007119060623843e-14,
+        "coarse_power_defect": 1.889688104816506e-15
+      },
+      {
+        "topology": 702,
+        "frequency_GHz": 7,
+        "theta_deg": 0,
+        "phi_deg": 30,
+        "N_coarse": 24,
+        "Q_coarse": 192,
+        "N_fine": 96,
+        "Q_fine": 768,
+        "M": 1,
+        "relative_full_GSM_delta": 0.03682216233186039,
+        "max_full_GSM_entry_delta": 0.025366649488992705,
+        "zero_reflection_fro_delta": 0.02845137600230745,
+        "TE_power_delta": 0.022415571322895178,
+        "TM_power_delta": 0.0036362280906907934,
+        "coarse_true_residual": 1.3730112800677436e-14,
+        "coarse_power_defect": 1.3063196410518117e-15
+      }
+    ],
+    "relative_full_GSM_delta_max": 0.03682216233186039,
+    "scope": "Finite-grid changes for two fixed normal-incidence cases. Learned extraction errors remain referenced to N24, not N96 or continuous physics."
+  }
+}

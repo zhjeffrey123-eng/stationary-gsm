@@ -1,0 +1,4 @@
+topology,frequency_GHz,converged_ports,breakdown_ports,maximum_final_port_residual,actual_maximum_iterations
+954,5,6,12,3.63156695745025,9
+954,7,6,12,1.89342263755997,8
+954,9,6,12,1.41516327763961,8
