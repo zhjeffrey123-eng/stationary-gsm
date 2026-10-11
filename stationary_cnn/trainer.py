@@ -2,7 +2,8 @@
 
 本模块不在导入时加载 Torch，也不查找本机路径。调用方显式提供 Torch、
 H5 路径、输出目录和电磁有效行回调。私有实验入口及公开命令行调用此同一核心。
-每次参数更新含四幅图案的全部三频率、十八端口及全部有效电流行。
+每次参数更新最多含四幅图案的全部三频率、十八端口及全部有效电流行。
+末批保留剩余图案，例如 N=50 的末批含两幅，不丢弃也不补重复图案。
 一个 epoch 是训练图案的完整遍历，不能与系数随机抽样的轮数混称。
 """
 from __future__ import annotations
@@ -30,6 +31,66 @@ COST_SCOPE = (
     'CSV and summary writes; excludes imports, source hash/preflight, testing '
     'and the final cost-stamp write itself'
 )
+
+
+def updates_per_epoch(train_count, batch_topologies=4):
+    """完整遍历的实际更新数。N=50 为 13 次，N=100 为 25 次。"""
+    if train_count < 1 or batch_topologies < 1:
+        raise ValueError('Positive topology count and batch capacity required')
+    return (int(train_count) + int(batch_topologies) - 1) // int(batch_topologies)
+
+
+def epoch_groups(train_count, rng, batch_topologies=4):
+    """仅生成一次置换，然后按容量切片，最后一组可小于容量。
+
+    所有图案每轮恰好出现一次。N 可被 4 整除时，组内顺序及连接后的
+    little-endian int64 字节流与原 permutation(N).reshape(-1,4) 相同。
+    """
+    updates_per_epoch(train_count, batch_topologies)
+    order = rng.permutation(train_count)
+    return tuple(order[first:first + batch_topologies]
+                 for first in range(0, train_count, batch_topologies))
+
+
+def update_group_digest(digest, groups):
+    """以实际组顺序记录全部索引，不为短组补零或重复索引。
+
+    恢复重放使用同一函数，继续核对完整置换的 SHA 和采样 RNG 状态。
+    """
+    for group in groups:
+        digest.update(np.asarray(group, dtype='<i8').tobytes())
+
+
+def batch_arrays(dataset, group):
+    """构造当前真实组的完整 54 场输入与标签，规模只由 len(group) 决定。
+
+    四图案组产生 216 场、12 个图案频率 case，两图案末组产生 108 场、
+    6 个 case。每 case 的全部有效行和 18 端口都保留，损失公式不变。
+    返回顺序对应网络 mask/query/active 及完整 target/denominator。
+    """
+    group = np.asarray(group, dtype=np.int64)
+    if group.ndim != 1 or not 1 <= len(group) <= 4 or len(np.unique(group)) != len(group):
+        raise ValueError('One to four distinct topologies required')
+    targets, denominators = zip(*(target_from_demod(dataset['demod_views'][int(t)],
+        dataset['rows'][int(t)], dataset['scale'], dataset['norm_squared'][int(t)]) for t in group))
+    masks = np.repeat((dataset['masks'][group].astype(np.float32) * 2 - 1)[:, None], 54, axis=0)
+    active = np.repeat(dataset['host_active'][group], 54, axis=0)
+    query = np.tile(dataset['query54'], (len(group), 1))
+    return masks, query, active, np.concatenate(targets), np.stack(denominators).astype(np.float32)
+
+
+def case_weighted_epoch_loss(losses, case_counts):
+    """按实际图案频率 case 数汇总训练日志，不将两图案末批与四图案批等权。
+
+    每 update 的反向传播仍使用原 loss_torch 对当前 case 的均匀平均。
+    此函数只定义全轮报告量。所有组相同时沿用原 fsum(loss)/组数算式，
+    因此 N=100 的旧四图案日志结果也保持完全相同。
+    """
+    if not losses or len(losses) != len(case_counts) or any(count <= 0 for count in case_counts):
+        raise ValueError('Positive matching loss/case records required')
+    if len(set(case_counts)) == 1:
+        return math.fsum(losses) / len(losses)
+    return math.fsum(value * count for value, count in zip(losses, case_counts)) / sum(case_counts)
 
 
 def _jsonable(value):
@@ -170,8 +231,8 @@ def _validate(torch, net, dataset, callback, device, epoch):
     return records, summary
 
 
-def train(torch, data_path, output_dir, train_count, epochs=48,
-          checkpoint_epochs=(12, 24, 36, 48), active_rows=None,
+def train(torch, data_path, output_dir, train_count, epochs=20,
+          checkpoint_epochs=(5, 10, 15, 20), active_rows=None,
           expected_data_sha256=None, resume_path=None, metadata=None,
           resource_sampler=None, after_update=None, after_epoch=None,
           device='cuda', initial_seed=120026, sampler_seed=2026101102,
@@ -187,8 +248,8 @@ def train(torch, data_path, output_dir, train_count, epochs=48,
     """
     if active_rows is None:
         raise ValueError('An explicit electromagnetic active_rows callback is required')
-    if train_count < 4 or train_count % 4 or epochs < 1 or threads < 1:
-        raise ValueError('train_count must be positive and divisible by four; epochs/threads must be positive')
+    if train_count < 1 or epochs < 1 or threads < 1:
+        raise ValueError('train_count, epochs and threads must be positive')
     if not (0 < minimum_learning_rate <= learning_rate):
         raise ValueError('Require 0 < minimum_learning_rate <= learning_rate')
     checkpoints = tuple(sorted(set(int(value) for value in checkpoint_epochs) | {int(epochs)}))
@@ -201,6 +262,9 @@ def train(torch, data_path, output_dir, train_count, epochs=48,
     metadata = _jsonable(metadata or {})
     signature = dict(architecture=ARCHITECTURE, training_count=int(train_count), epochs=int(epochs),
                      checkpoint_epochs=list(checkpoints), batch_topologies=4,
+                     last_batch_policy='retain_remaining_distinct_topologies_no_drop_no_padding',
+                     updates_per_epoch=updates_per_epoch(train_count),
+                     epoch_loss_weighting='actual_topology_frequency_case_count',
                      initial_seed=int(initial_seed), sampler_seed=int(sampler_seed),
                      learning_rate=float(learning_rate), minimum_learning_rate=float(minimum_learning_rate),
                      validation_start=int(validation_start), validation_count=int(validation_count),
@@ -238,12 +302,12 @@ def train(torch, data_path, output_dir, train_count, epochs=48,
         start_epoch, total_updates = int(state['epoch']), int(state['total_updates'])
         if start_epoch >= epochs:
             raise ValueError('The saved trajectory already completed its planned epochs')
-        if total_updates != start_epoch * (train_count // 4):
+        if total_updates != start_epoch * updates_per_epoch(train_count):
             raise ValueError('Saved epoch/update count is inconsistent')
         # hashlib 无可移植的状态序列化。仅重放几何置换恢复摘要，不读取任何标签。
         for _ in range(start_epoch):
-            groups = rng.permutation(train_count).reshape(-1, 4)
-            group_digest.update(groups.astype('<i8', copy=False).tobytes())
+            groups = epoch_groups(train_count, rng)
+            update_group_digest(group_digest, groups)
         if group_digest.hexdigest() != state['topology_group_sha256'] or _jsonable(rng.bit_generator.state) != state['sampler_rng_state']:
             raise ValueError('Saved sampler state differs from exact epoch replay')
         rng.bit_generator.state = state['sampler_rng_state']
@@ -272,7 +336,8 @@ def train(torch, data_path, output_dir, train_count, epochs=48,
     def summary(status, epoch, reason=None):
         return dict(status=status, architecture=ARCHITECTURE, parameter_count=parameter_count(),
                     completed_epochs=epoch, planned_epochs=epochs, total_updates=total_updates,
-                    training_count=train_count, updates_per_epoch=train_count // 4,
+                    training_count=train_count, updates_per_epoch=updates_per_epoch(train_count),
+                    last_batch_topologies=((train_count - 1) % 4) + 1,
                     validation_topologies=validation_count, validation_conditions=validation_count * 3,
                     output_scale=float(dataset['scale']), normalization='train-only global RMS',
                     loss_name=LOSS_NAME, checkpoint_epochs=list(checkpoints),
@@ -345,17 +410,12 @@ def train(torch, data_path, output_dir, train_count, epochs=48,
               (.5 + .5 * math.cos(math.pi * (epoch - 1) / max(1, epochs - 1))))
         for group in optimizer.param_groups:
             group['lr'] = lr
-        groups = rng.permutation(train_count).reshape(-1, 4)
-        group_digest.update(groups.astype('<i8', copy=False).tobytes())
-        epoch_loss, maximum_gradient_norm = [], 0.0
+        groups = epoch_groups(train_count, rng)
+        update_group_digest(group_digest, groups)
+        epoch_loss, epoch_case_counts, maximum_gradient_norm = [], [], 0.0
         for epoch_update, group in enumerate(groups, 1):
-            targets, denominators = zip(*(target_from_demod(dataset['demod_views'][int(t)],
-                dataset['rows'][int(t)], dataset['scale'], dataset['norm_squared'][int(t)]) for t in group))
-            masks = np.repeat((dataset['masks'][group].astype(np.float32) * 2 - 1)[:, None], 54, axis=0)
-            active = np.repeat(dataset['host_active'][group], 54, axis=0)
-            query = np.tile(dataset['query54'], (4, 1))
-            batch = [torch.from_numpy(np.ascontiguousarray(value)).to(device) for value in
-                     (masks, query, active, np.concatenate(targets), np.stack(denominators).astype(np.float32))]
+            arrays = batch_arrays(dataset, group)
+            batch = [torch.from_numpy(np.ascontiguousarray(value)).to(device) for value in arrays]
             optimizer.zero_grad(set_to_none=True)
             predicted = net(batch[0], batch[1], batch[2])
             loss = loss_torch(torch, predicted, batch[3], batch[4])
@@ -377,12 +437,13 @@ def train(torch, data_path, output_dir, train_count, epochs=48,
             maximum_gradient_norm = max(maximum_gradient_norm, norm)
             optimizer.step()
             epoch_loss.append(float(loss.detach().item()))
+            epoch_case_counts.append(3 * len(group))
             total_updates += 1
-            del batch, predicted, loss, targets, denominators, masks, active, query
+            del batch, predicted, loss, arrays
             if after_update is not None:
                 after_update(epoch, epoch_update, total_updates)
         epoch_history.append(dict(epoch=epoch, total_updates=total_updates, learning_rate=lr,
-            matrix_relative_squared_loss=math.fsum(epoch_loss) / len(epoch_loss),
+            matrix_relative_squared_loss=case_weighted_epoch_loss(epoch_loss, epoch_case_counts),
             maximum_gradient_norm=maximum_gradient_norm))
         resources = _resources(torch, device, resource_sampler)
         resource_history.append(dict(epoch=epoch, total_updates=total_updates, **resources))

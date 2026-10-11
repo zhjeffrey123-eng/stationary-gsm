@@ -23,6 +23,7 @@ def initialize_torch(device='cuda', seed=120026, threads=4):
     换成 CPU 后仍把结果标记为 GPU。跨平台重训不承诺逐位相同权重。
     """
     os.environ.setdefault('CUBLAS_WORKSPACE_CONFIG', ':4096:8')
+    os.environ.setdefault('TORCH_CUDNN_V8_API_LRU_CACHE_LIMIT', '20')
     import torch
     if not str(torch.__version__).startswith('2.7.1'):
         raise RuntimeError('此配置固定使用 Torch 2.7.1。请按 README 安装对应 CPU/CUDA 版本。')
@@ -31,7 +32,7 @@ def initialize_torch(device='cuda', seed=120026, threads=4):
     if device not in ('cpu', 'cuda'):
         raise ValueError('device 必须为 cpu 或 cuda')
     torch.set_num_threads(threads)
-    torch.set_num_interop_threads(1)
+    torch.set_num_interop_threads(threads)
     torch.manual_seed(seed)
     if device == 'cuda':
         torch.cuda.manual_seed_all(seed)
@@ -48,13 +49,13 @@ def _active_rows(mask):
     return active(mask, 24)
 
 
-def train_cnn(data_path, output_dir, training_count=600, epochs=48,
-              checkpoint_epochs=(12, 24, 36, 48), device='cuda', threads=4,
+def train_cnn(data_path, output_dir, training_count=600, epochs=20,
+              checkpoint_epochs=(5, 10, 15, 20), device='cuda', threads=4,
               seed=120026, sampler_seed=2026101102, resume=None):
     """完整矩阵监督，train-only RMS，固定一百幅验证图案。
 
     count 是训练拓扑数，不是频率条件数。一个 epoch 完整遍历 count 幅图案。
-    所有规模使用相同四拓扑批次，每拓扑包含三频率乘十八端口的完整场。
+    每批最多四幅拓扑，每拓扑包含三频率乘十八端口的完整场。末批保留余下拓扑。
     """
     from stationary_cnn import trainer
     torch = initialize_torch(device, seed, threads)
@@ -79,17 +80,17 @@ def train_cnn(data_path, output_dir, training_count=600, epochs=48,
         device=device, initial_seed=seed, sampler_seed=sampler_seed, threads=threads)
 
 
-def train_cnn_series(data_path, output_dir, counts=(100, 300, 600, 1000, 2000, 5000),
-                     epochs=48, checkpoint_epochs=(12, 24, 36, 48), device='cuda', threads=4):
+def train_cnn_series(data_path, output_dir, counts=(50, 100, 200, 1000, 5000),
+                     epochs=20, checkpoint_epochs=(5, 10, 15, 20), device='cuda', threads=4):
     """串行启动独立 Python 进程，禁止重用上一规模的进程累计峰值或标签缓存。
 
-    六个规模分别建立自己的缓存。数据源只读共用，测试集没有输入入口。
+    每个规模分别建立自己的缓存。数据源只读共用，测试集没有输入入口。
     这里不按测试误差挑选规模，也不保证误差对规模严格单调。
     """
     output_dir = Path(output_dir)
     output_dir.mkdir(parents=True, exist_ok=False)
-    if len(set(counts)) != len(counts) or any(count < 4 or count % 4 for count in counts):
-        raise ValueError('counts 必须互异且均为正的四倍数')
+    if len(set(counts)) != len(counts) or any(count < 1 or count > 5000 for count in counts):
+        raise ValueError('counts 必须互异，且为1至5000的整数')
     runs = []
     for count in counts:
         target = output_dir / f'N{count}'
@@ -146,13 +147,18 @@ def cnn_demo(model_path, target, frequency=7., tolerance=.1, maximum_iterations=
     predictor = load_predictor(model_path, torch, _active_rows, device)
     reference, exact_current, _, diagnostic, operator = solve(mask, frequency, N=24, Q=192, M=1, method='dense')
     predicted = predictor.predict(mask, [frequency])[:, :, 0]
-    corrected, correction, _ = refine(operator, predicted, tolerance=tolerance,
-                                       maximum_iterations=maximum_iterations)
+    _, correction, snapshots = refine(operator, predicted, tolerance=tolerance,
+        maximum_iterations=maximum_iterations, levels=(tolerance,), fixed=())
+    # 只使用逐端口首次达标快照，不能用更晚、更准确的末次电流替代。
+    corrected = snapshots[0]
     arrays = dict(mask=mask, reference_current=exact_current, raw_current=predicted,
                   corrected_current=corrected, reference_GSM=reference)
     errors = {}
     for name, current in (('raw', predicted), ('corrected', corrected)):
         errors[name] = {}
+        if not np.all(np.isfinite(current)):
+            errors[name] = {'criterion_attained': False, 'reason': 'Some incoming ports did not reach the specified true residual'}
+            continue
         for method in ('projection', 'reciprocal', 'stationary'):
             matrix, _, residual = extract(operator, current, method=method)
             if not np.all(np.isfinite(matrix)):
@@ -166,6 +172,8 @@ def cnn_demo(model_path, target, frequency=7., tolerance=.1, maximum_iterations=
                   N=24, Q=192, M=1, device=device,
                   same_currents_for_all_three_methods=True, errors=errors,
                   COCG_tolerance=tolerance, COCG_maximum_iterations=maximum_iterations,
+                  corrected_snapshot='first_true_residual_hit_per_port',
+                  all_ports_attained=bool(np.all(correction['level_hit'][:,0])),
                   COCG_failed_ports=int(np.count_nonzero(correction['broken'])),
                   COCG_unconverged_ports=int(np.count_nonzero(~correction['converged'])),
                   reference_residual=diagnostic['plus']['maximum_column_residual'])

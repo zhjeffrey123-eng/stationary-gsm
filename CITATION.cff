@@ -2,8 +2,8 @@ cff-version: 1.2.0
 message: "Please cite this software and the associated manuscript."
 title: "Stationary GSM Extraction for Periodic Metal Pixel Metasurfaces"
 type: software
-version: 3.3.0
-date-released: 2026-10-11
+version: 3.4.0
+date-released: 2026-10-12
 authors:
   - family-names: Zhang
     given-names: Zhifa

@@ -2,7 +2,7 @@
 
 Python代码提供 PEC 像素片的电流网络训练、固定规模训练比较、物理标签重建及 GSM 提取示例。网络包括原 NumPy 多层感知机和周期卷积网络。数据为5000个训练图案和100个固定验证图案，网格为 N=24、Q=192、M=1，频率5/7/9 GHz、法向入射、18个入射列。代码和数据均不需要 MATLAB。
 
-代码版本为3.3.0，增加完整电流场监督的周期卷积训练入口。训练数据沿用已发布的 [v3.2.0](https://github.com/zhjeffrey123-eng/stationary-gsm-awpl/releases/tag/v3.2.0) 附件，不重复分发。训练H5保留内部gzip压缩，不需要外层ZIP。代码和文档见[仓库](https://github.com/zhjeffrey123-eng/stationary-gsm-awpl)。
+代码版本为3.4.0，采用20次完整训练遍历的周期卷积配置，支持不满四图案的末批。训练数据沿用已发布的 [v3.2.0](https://github.com/zhjeffrey123-eng/stationary-gsm-awpl/releases/tag/v3.2.0) 附件，不重复分发。训练H5保留内部gzip压缩，不需要外层ZIP。代码和文档见[仓库](https://github.com/zhjeffrey123-eng/stationary-gsm-awpl)。
 
 训练数据：[training_dataset_5000.h5](https://github.com/zhjeffrey123-eng/stationary-gsm-awpl/releases/download/v3.2.0/training_dataset_5000.h5)，1,147,395,483字节，SHA-256：
 
@@ -10,7 +10,7 @@ Python代码提供 PEC 像素片的电流网络训练、固定规模训练比较
 d31d313533f8c5c3e7b9947a8b2005f9f9afca821a3bd3469cafc5b1914a4d9a
 ```
 
-下载后放入代码根目录下的 `data/`。复用H5按上述SHA-256核验，3.3.0代码ZIP按同版本附件 `SHA256SUMS-v3.3.0.txt` 核验。
+下载后放入代码根目录下的 `data/`。复用H5按上述SHA-256核验，3.4.0代码ZIP按同版本附件 `SHA256SUMS-v3.4.0.txt` 核验。
 
 采用 Python 3.12，在代码目录运行：
 
@@ -42,7 +42,7 @@ python -m pip install -r requirements-torch-cu118.txt
 训练一组600图案：
 
 ```bash
-python -m stationary_gsm train-cnn --training-count 600 --epochs 48 --checkpoint-epochs 12 24 36 48 --device cuda --out runs/cnn600
+python -m stationary_gsm train-cnn --training-count 600 --epochs 20 --checkpoint-epochs 5 10 15 20 --device cuda --out runs/cnn600
 ```
 
 CPU 入口只需将 `--device cuda` 改为 `--device cpu`。数据可用 `--data` 指定，源文件必须与上面的公开 SHA-256 相符。输出目录必须尚不存在。所有规模取训练分区的顺序前缀，验证固定为 H5 索引5000:5100，验证电流不参与梯度或归一化计算。
@@ -50,10 +50,10 @@ CPU 入口只需将 `--device cuda` 改为 `--device cpu`。数据可用 `--data
 完整规模研究使用独立进程串行运行：
 
 ```bash
-python -m stationary_gsm train-cnn-series --counts 100 300 600 1000 2000 5000 --epochs 48 --checkpoint-epochs 12 24 36 48 --device cuda --out runs/cnn_sizes
+python -m stationary_gsm train-cnn-series --counts 50 100 200 1000 5000 --epochs 20 --checkpoint-epochs 5 10 15 20 --device cuda --out runs/cnn_sizes
 ```
 
-每个规模建立自己的缓存。程序不会用上一个规模的累计进程峰值，也不会仅让某一个规模承担冷缓存创建成本。训练规模数值必须是正的四倍数，不能超过5000。自定义总轮数时，检查点应落在总轮数范围内，终点总是保存。
+每个规模建立自己的缓存。程序不会用上一个规模的累计进程峰值，也不会仅让某一个规模承担冷缓存创建成本。训练规模可以是1至5000的整数。N=50每轮包含12个四图案批和1个两图案末批，合计13次更新；末批不丢弃、不补零、不重复图案。自定义总轮数时，检查点应落在总轮数范围内，终点总是保存。
 
 ### 输入、输出与相位
 
@@ -65,7 +65,7 @@ python -m stationary_gsm train-cnn-series --counts 100 300 600 1000 2000 5000 --
 
 ### 训练目标与误差统计
 
-每次更新包含四幅图案，每幅图案包含三频率、十八端口和全部有效电流行，合计216个完整场。一个 epoch 是全部训练图案的一次随机置换遍历，更新次数为 Ntrain/4。没有从完整矩阵中另外挑选有利的系数。不同规模的一个 epoch 对应的实际更新次数不同，应结合墙钟比较，不能只比较轮数。
+每次更新最多包含四幅图案，每幅图案包含三频率、十八端口和全部有效电流行，四图案批合计216个完整场，两图案末批包含108个完整场。一个 epoch 是全部训练图案的一次随机置换遍历，更新次数为 ceil(Ntrain/4)。没有从完整矩阵中另外挑选有利的系数。不同规模的一个 epoch 对应的实际更新次数不同，应结合墙钟比较，不能只比较轮数。
 
 训练目标为各图案、各频率的相对电流矩阵误差平方的平均：
 
@@ -73,7 +73,7 @@ python -m stationary_gsm train-cnn-series --counts 100 300 600 1000 2000 5000 --
 L = mean_case( sum_active,port |Jpred − Jref|² / sum_active,port |Jref|² )
 ```
 
-case 指一幅图案在一个频率下的完整矩阵。分母先由原标签独立计算。每个 case 权重相同，不因某图案具有更多有效行而增加其权重。训练使用 AdamW，β=(0.9,0.999)、ε=1e−8、weight decay=1e−5，梯度范数大于5时裁剪，学习率按固定总轮数从0.001余弦衰减到0.0001。梯度裁剪范数按逐参数 float64 平方和计算。
+case 指一幅图案在一个频率下的完整矩阵。分母先由原标签独立计算。每个 case 权重相同，不因某图案具有更多有效行而增加其权重。每次反向传播按当前真实批次的case数取平均，全轮训练日志按各批实际case数加权，避免给较小末批过高权重。训练使用 AdamW，β=(0.9,0.999)、ε=1e−8、weight decay=1e−5，梯度范数大于5时裁剪，学习率按固定总轮数从0.001余弦衰减到0.0001。梯度裁剪范数按逐参数 float64 平方和计算。
 
 验证报告的是每个 case 的相对 Frobenius 范数本身，包括均值、中位数、95百分位和最大值。均值为全部300个条件的算术平均，不是训练 loss 的平方根，也不是把所有图案拼成一个大矩阵后的误差。每幅验证图案的三个频率保留在一起，不能把300条件当作300幅独立几何。大误差和非单调点不会被过滤。增加规模或轮数不构成严格单调下降保证。
 
@@ -81,13 +81,13 @@ case 指一幅图案在一个频率下的完整矩阵。分母先由原标签独
 
 | 输出 | 含义 |
 |---|---|
-| checkpoint_12.npz 等 | 计划检查点的网络、缩放、网格、训练规模及协议标识，NumPy安全读取 |
-| complete_state_12.pt 等 | 网络、完整Adam矩与步数、初始化/采样/Torch随机状态、轮数及历史 |
+| checkpoint_5.npz 等 | 计划检查点的网络、缩放、网格、训练规模及协议标识，NumPy安全读取 |
+| complete_state_5.pt 等 | 网络、完整Adam矩与步数、初始化/采样/Torch随机状态、轮数及历史 |
 | validation_conditions.csv | 每检查点的100图案乘3频率误差，保留全部条件 |
 | checkpoint_summary.csv | 验证统计、模型文件、资源及对应成本时间戳文件 |
 | training_history.csv | 每轮真实矩阵平方损失、学习率、更新次数与梯度范数 |
 | resource_history.csv | 实际操作系统与GPU资源，不能用数组尺寸替代 |
-| cost_epoch_12.json 等 | 检查点统一成本边界，学习时间图与终点资源图使用同一来源 |
+| cost_epoch_5.json 等 | 检查点统一成本边界，学习时间图与终点资源图使用同一来源 |
 | training_summary.json | 架构、预算、数据、验证与实际完成状态 |
 | demod_current_cache.bin | 逐图案建立的去相位有效电流磁盘映射，运行输出，不随代码发布 |
 | validation_reference.bin | 独立保存的原验证电流，避免用训练目标量化值反算验证真值 |
@@ -99,7 +99,7 @@ Windows 记录操作系统真实累计 `PeakWorkingSetSize`、当前工作集和
 恢复自己已保存的未完成轨迹：
 
 ```bash
-python -m stationary_gsm train-cnn --training-count 600 --epochs 48 --checkpoint-epochs 12 24 36 48 --device cuda --out runs/cnn600 --resume runs/cnn600/complete_state_24.pt
+python -m stationary_gsm train-cnn --training-count 600 --epochs 20 --checkpoint-epochs 5 10 15 20 --device cuda --out runs/cnn600 --resume runs/cnn600/complete_state_10.pt
 ```
 
 恢复时架构、完整预算、元协议、数据及随机种子必须一致，不是只载入权重重新开始。仅重放置换编号以复核采样摘要，不重算已完成训练。若修改总轮数或学习率，那是新的实验轨迹。正常资源暂停会在完整状态中保留累计成本，不能冒充一次无中断运行。异常中断只能恢复最近已保存的完整检查点，尚未落盘的更新和耗时不能据此重建。
@@ -107,10 +107,10 @@ python -m stationary_gsm train-cnn --training-count 600 --epochs 48 --checkpoint
 ### 用自己的卷积模型提取GSM
 
 ```bash
-python -m stationary_gsm demo-cnn --model runs/cnn600/checkpoint_48.npz --frequency 7 --tolerance 0.1 --maximum-iterations 512 --device cuda --out runs/cnn_demo
+python -m stationary_gsm demo-cnn --model runs/cnn600/checkpoint_20.npz --frequency 7 --tolerance 0.1 --maximum-iterations 512 --device cuda --out runs/cnn_demo
 ```
 
-例子现场生成环形像素面，计算参考解、预测电流及同一轮物理残差修正，随后用 projection、带权 reciprocal 和 stationary 三种算子提取GSM。三种算子收到相同电流。迭代上限或端口失败都在输出中保留，不能把尚未达到残差容限的条件称为收敛。参考解用于本次示例的误差检验，程序不读取未公开测试集。
+例子现场生成环形像素面，计算参考解、预测电流及同一轮物理残差修正，随后用 projection、带权 reciprocal 和 stationary 三种算子提取GSM。修正后提取使用每个端口首次达到容限时的电流快照，三种算子收到相同电流。任何端口未达标时保留失败状态，不以末次电流替代快照。迭代上限或端口失败都在输出中保留，不能把尚未达到残差容限的条件称为收敛。参考解用于本次示例的误差检验，程序不读取未公开测试集。
 
 也可加 `--data data/training_dataset_5000.h5 --training-index 0` 选择一幅公开训练几何。该选项只读取mask，不读取现成电流或响应，现场重新计算此单频率的参考解。索引只能取0:5000的训练分区。
 
