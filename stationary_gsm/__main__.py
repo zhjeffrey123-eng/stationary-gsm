@@ -42,6 +42,36 @@ def main():
     example.add_argument('--tolerance',type=float,default=.1)
     example.add_argument('--maximum-iterations',type=int,default=64)
     example.add_argument('--threads',type=int,default=4)
+    # 周期 CNN 使用可选 Torch；解析命令和原 NumPy 分支都不会自动导入它。
+    cnn=sub.add_parser('train-cnn',help='完整电流场监督的周期CNN，保存固定验证与真实成本')
+    cnn.add_argument('--data',type=Path,default=ROOT/'data/training_dataset_5000.h5')
+    cnn.add_argument('--out',type=Path,required=True)
+    cnn.add_argument('--training-count',type=int,default=600)
+    cnn.add_argument('--epochs',type=int,default=48)
+    cnn.add_argument('--checkpoint-epochs',type=int,nargs='+',default=[12,24,36,48])
+    cnn.add_argument('--device',choices=['cpu','cuda'],default='cuda')
+    cnn.add_argument('--threads',type=int,default=4)
+    cnn.add_argument('--seed',type=int,default=120026)
+    cnn.add_argument('--sampler-seed',type=int,default=2026101102)
+    cnn.add_argument('--resume',type=Path,help='仅恢复自己保存的complete_state文件，计划和源数据必须相同')
+    cnn_series=sub.add_parser('train-cnn-series',help='六规模各用新进程和独立缓存串行运行完整场CNN')
+    cnn_series.add_argument('--data',type=Path,default=ROOT/'data/training_dataset_5000.h5')
+    cnn_series.add_argument('--out',type=Path,required=True)
+    cnn_series.add_argument('--counts',type=int,nargs='+',default=[100,300,600,1000,2000,5000])
+    cnn_series.add_argument('--epochs',type=int,default=48)
+    cnn_series.add_argument('--checkpoint-epochs',type=int,nargs='+',default=[12,24,36,48])
+    cnn_series.add_argument('--device',choices=['cpu','cuda'],default='cuda')
+    cnn_series.add_argument('--threads',type=int,default=4)
+    cnn_demo=sub.add_parser('demo-cnn',help='用自己新训练的CNN及现场EFIE参考解演示同电流三种提取')
+    cnn_demo.add_argument('--model',type=Path,required=True)
+    cnn_demo.add_argument('--out',type=Path,required=True)
+    cnn_demo.add_argument('--frequency',type=float,default=7.)
+    cnn_demo.add_argument('--tolerance',type=float,default=.1)
+    cnn_demo.add_argument('--maximum-iterations',type=int,default=512)
+    cnn_demo.add_argument('--device',choices=['cpu','cuda'],default='cuda')
+    cnn_demo.add_argument('--threads',type=int,default=4)
+    cnn_demo.add_argument('--data',type=Path,help='可选公开训练H5，只读取所选训练图案的mask')
+    cnn_demo.add_argument('--training-index',type=int,default=0)
     args=parser.parse_args()
     if args.threads<1:parser.error('threads必须为正整数')
     # 必须先设环境，再导入NumPy/SciPy/H5模块；threadpool_limits同时约束已载入的库。
@@ -64,6 +94,18 @@ def main():
         elif args.command=='generate-labels':
             from .label_generation import generate_labels
             result=generate_labels(args.template,args.out)
+        elif args.command=='train-cnn':
+            from .cnn_commands import train_cnn
+            result=train_cnn(args.data,args.out,args.training_count,args.epochs,
+                tuple(args.checkpoint_epochs),args.device,args.threads,args.seed,args.sampler_seed,args.resume)
+        elif args.command=='train-cnn-series':
+            from .cnn_commands import train_cnn_series
+            result=train_cnn_series(args.data,args.out,tuple(args.counts),args.epochs,
+                tuple(args.checkpoint_epochs),args.device,args.threads)
+        elif args.command=='demo-cnn':
+            from .cnn_commands import cnn_demo
+            result=cnn_demo(args.model,args.out,args.frequency,args.tolerance,
+                args.maximum_iterations,args.device,args.threads,args.data,args.training_index)
         else:
             from .example import demo
             result=demo(args.model,args.out,args.frequency,args.tolerance,args.maximum_iterations)
