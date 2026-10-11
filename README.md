@@ -1,50 +1,20 @@
-# Stationary GSM extraction for periodic metal pixel metasurfaces
+# Stationary GSM extraction — v3.0.0
 
-Python implementation and numerical data accompanying *A Stationary GSM Extraction Method for 2D Periodic Metal Pixel Metasurfaces*. The model is an 8×8 zero-thickness PEC pixel sheet with a 20 mm period in free space. Three extraction operators act on the same surface currents.
+本仓库仅提供 Python 数值代码和固定训练/验证标签。代码为周期20 mm的8×8零厚度PEC像素面实现谱域EFIE、电流网络、COCG修正、同电流三种GSM提取及多层GSM连接。中文注释说明入射相位、RMS缩放和互易普通转置。
 
-## Installation
+下载代码附件和训练附件，解压到同一目录。训练附件产生 `data/training.h5`，含600个训练图案（split=1）和100个验证图案（split=2），不含200个保留测试图案。N24/Q192/M1、5/7/9 GHz、法向入射、18端口。所有保留标签数组与原数据逐元素一致；验证集不参与梯度。
 
-Python 3.11 or later is recommended. No MATLAB installation, MATLAB licence, or proprietary numerical toolbox is required.
+Python 3.12，依赖采用本次实际检查的版本：
 
 ```bash
-python -m venv .venv
 python -m pip install -r requirements.txt
-python -m stationary_gsm verify
-python -m stationary_gsm demo
+python -m stationary_gsm train --hidden 128 --out results/train128
+python -m stationary_gsm train --hidden 64 --out results/train64
+python -m stationary_gsm demo --model results/train128/model.npz --out results/example
 ```
 
-Activate the virtual environment before installing the requirements and running the commands. On Windows use `.venv\Scripts\activate`. On Linux or macOS use `source .venv/bin/activate`.
+训练默认80 epochs、每轮128 batches、每batch 4096个有效电流样本、seed120026。监督只用相对电流MSE；训练集全局RMS缩放标签，移除解析入射相位，再以验证电流MSE选择 `model.npz`。默认另保存第10轮 `checkpoint_10.npz`，可用 `--epochs` / `--checkpoint-epochs` 更改预算。64和128单元共享同一训练实现，参数只改变两隐藏层宽度。输出目录必须尚不存在；预训练权重不分发，新训练模型不承诺逐位重现原权重。
 
-`verify` recomputes the paper statistics from the original 90,000 CSV rows. `demo` solves an oblique-incidence EFIE example and checks output-error scaling, the quadratic identity, and power balance. Both commands work with the repository files alone.
+`demo`用刚训练的模型和代码现场生成的环形像素面计算参考EFIE解、预测电流、COCG修正，再从同一组电流提取projection/reciprocal/stationary GSM。它将本次生成的数组及误差写入新目录，记录失败或未收敛端口；不读取论文测试集或已归档结果。网络编码仅适用M=1和法向入射，数值提取代码也支持成对斜入射算子。多层接口见 `stationary_gsm/stack.py` 的 `cascade` 与 `coupled`。
 
-## Data and full checks
-
-Download `stationary-gsm-data-v2.0.0.zip` from the [fixed release](https://github.com/zhjeffrey123-eng/stationary-gsm-awpl/releases/tag/v2.0.0) and extract it at the repository root, merging the `output` directory.
-
-```bash
-python -m stationary_gsm audit
-python -m stationary_gsm evaluate --count 1000 --out results/evaluation
-python -m stationary_gsm stack --full --out results/stack
-python -m stationary_gsm fine --N 48 64 80 96 --frequencies 5 7 9 --angles 0 20 40 --ratios 6 8 --out results/fine
-python -m stationary_gsm fields --out results/fields
-python -m stationary_gsm figures --out results/figures
-```
-
-All calculation commands require a new output directory. Original data are read-only inputs. Fine-grid calculations are substantially more expensive than the small demonstration.
-
-## Training and label generation
-
-```bash
-python -m stationary_gsm labels --count 900 --out results/labels
-python -m stationary_gsm novel-labels --count 1000 --out results/novel-labels
-python -m stationary_gsm train --out results/training
-python -m stationary_gsm evaluate --model results/training/model.npz --count 1000 --out results/retrained-evaluation
-```
-
-Training uses NumPy GELU layers, analytic gradients, and AdamW, with validation-based model selection. Random number generators and floating-point kernels differ between languages, so retraining does not promise the original weights. Use the supplied `model.npz` for the frozen-model checks. The neural model covers normal incidence with M=1. Oblique-incidence theory and reference calculations use the paired-incidence EFIE.
-
-## File formats and provenance
-
-Large current labels use HDF5 (`.h5`). Model parameters and reference results use NumPy archives (`.npz`), with no pickle. The public package contains no `.m` or `.mat` files. `docs/data_conversion.json` records the original and converted file checksums and exact value checks for 323 source data files. Nested reference archives store numeric arrays and a JSON schema, read by `stationary_gsm.data.load_bundle`.
-
-The manuscript CSV records describe the original numerical experiments. Conversion preserves their values, including failed cases and recorded timings. Python recomputation writes separate results and timings. See [README_zh.md](README_zh.md) for detailed Chinese instructions, [docs/METHODS_zh.md](docs/METHODS_zh.md) for conventions, and [docs/PAPER_MAP.md](docs/PAPER_MAP.md) for the figure-to-file mapping.
+较短的入口检查可使用 `--epochs 1 --batches 1 --batch 64`；这仍读取全部公开训练/验证图案，不能用作收敛或性能结论。完整训练会缓存各图案的有效电流标签，需要较大的内存和运行时间。数据键及量纲见 [data/README.md](data/README.md)。固定版本引用见 [CITATION.cff](CITATION.cff)。

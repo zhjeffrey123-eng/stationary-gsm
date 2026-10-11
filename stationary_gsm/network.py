@@ -1,4 +1,4 @@
-"""几何对齐的 71–128–128–2 共享电流网络，NumPy 前向、反向和 AdamW。
+"""几何对齐的 71–h–h–2 共享电流网络（h=128 或 64），NumPy 前向、反向和 AdamW。
 
 所有基函数共用权重。监督目标去除解析入射相位，再用训练集全局 RMS 缩放。
 网络训练仅含相对电流 MSE，不含 PEC 残差。后续物理修正由独立模块完成。
@@ -59,7 +59,7 @@ def forward(model,u,cache=False):
 def predict(model,mask,frequencies,g=None):
     N = int(model['N'])
     if int(model['M'])!=1:
-        raise ValueError('冻结网络仅支持 M=1、法向入射，不外推到斜入射')
+        raise ValueError('该网络编码仅支持 M=1、法向入射，不外推到斜入射')
     g = geometry(mask) if g is None else g
     if g.ndim==2:
         g = g[:,:,None]
@@ -92,12 +92,14 @@ def gradients(model,u,target,weight):
                         'b2':g2.sum(axis=1),'W1':g1@x.T,'b1':g1.sum(axis=1)}
 
 
-def train(labels_path,target,epochs=80,batches=128,batch=4096,seed=120026,validation_interval=5):
+def train(labels_path,target,epochs=80,batches=128,batch=4096,seed=120026,validation_interval=5,hidden=128,checkpoint_epochs=(10,)):
     """重新训练，写入新目录。随机数库不同，不承诺重得原始冻结权重。
 
-    原论文结果对应发布的冻结权重。此函数使用相同结构、监督损失和优化设置，
+    此包不分发预训练权重。此函数使用原有结构、监督损失和优化设置，
     以独立验证集误差选择权重。默认 80 epochs，单精度训练，余弦学习率。
     """
+    if hidden not in (64,128) or min(epochs,batches,batch,validation_interval)<1:
+        raise ValueError('hidden 必须为64或128，训练预算必须为正整数')
     target = Path(target)
     target.mkdir(parents=True,exist_ok=False)
     rng = np.random.default_rng(seed)
@@ -107,6 +109,8 @@ def train(labels_path,target,epochs=80,batches=128,batch=4096,seed=120026,valida
         masks = d.masks[:]
         g = geometry(masks)
         training,validation = np.flatnonzero(d.split==1),np.flatnonzero(d.split==2)
+        if not len(training) or not len(validation) or np.any(~np.isin(d.split,[1,2])):
+            raise ValueError('训练库仅允许非空训练 split=1、验证 split=2')
         rows = [np.flatnonzero(v) for v in d.file['active'][:]]
         counts = np.array([len(v) for v in rows])
         # 只缓存有效金属行，避免同时保留全部空气零行和整份 complex128 副本。
@@ -119,7 +123,7 @@ def train(labels_path,target,epochs=80,batches=128,batch=4096,seed=120026,valida
             rms[t] = np.sqrt(np.sum(abs(current.astype(complex))**2,axis=1)/counts[t])
         scale = np.float32(np.sqrt(np.mean(rms[training]**2)))
         model = {'N':np.asarray(d.N),'Q':np.asarray(d.Q),'M':np.asarray(d.M),'output_scale':np.asarray(scale)}
-        widths = [71,128,128,2]
+        widths = [71,hidden,hidden,2]
         for j in range(3):
             model[f'W{j+1}'] = (rng.standard_normal((widths[j+1],widths[j]))*np.sqrt(2/widths[j])).astype(np.float32)
             model[f'b{j+1}'] = np.zeros(widths[j+1],np.float32)
@@ -161,6 +165,8 @@ def train(labels_path,target,epochs=80,batches=128,batch=4096,seed=120026,valida
                 if val<best:
                     best,best_epoch = val,epoch
                     np.savez_compressed(target/'model.npz',**model,bestEpoch=np.asarray(epoch))
+            if epoch in checkpoint_epochs:
+                np.savez_compressed(target/f"checkpoint_{epoch}.npz", **model, saved_epoch=np.asarray(epoch))
             history.append([epoch,accumulated/batches,val,lr,time.perf_counter()-start])
             print(f'epoch {epoch} train {history[-1][1]:.6g} validation {val:.6g}',flush=True)
         with (target/'training_history.csv').open('w',newline='',encoding='utf-8') as f:
