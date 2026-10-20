@@ -3,6 +3,7 @@ results/
 runs/
 *.pt
 *.npz
+!data/**/*.npz
 *.bin
 __pycache__/
 *.pyc

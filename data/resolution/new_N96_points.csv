@@ -1,0 +1,3 @@
+panel,topology,theta_deg,f_GHz,N,lower_N,upper_N,lower_Q,upper_Q,matrix_shape,relative_full_GSM_delta
+c,701,40,7,96,80,96,640,768,36x36,0.001974111096366259
+d,701,40,7,96,96,96,576,768,36x36,8.327393873376487e-06
