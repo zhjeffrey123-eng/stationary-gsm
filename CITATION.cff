@@ -1,9 +1,8 @@
 cff-version: 1.2.0
 message: "Please cite this software and the associated manuscript."
-title: "Stationary GSM Extraction for Doubly Periodic PEC Structures"
+title: "Stationary GSM Extraction for Doubly Periodic PEC Electromagnetic Structures"
 type: software
-version: 3.7.0
-date-released: 2026-10-20
+version: 3.8.0
 authors:
   - family-names: Zhang
     given-names: Zhifa
@@ -12,4 +11,4 @@ authors:
   - family-names: Ding
     given-names: Xiao
 repository-code: "https://github.com/zhjeffrey123-eng/stationary-gsm-awpl"
-url: "https://github.com/zhjeffrey123-eng/stationary-gsm-awpl/releases/tag/v3.7.0"
+url: "https://github.com/zhjeffrey123-eng/stationary-gsm-awpl/releases/tag/v3.8.0"
