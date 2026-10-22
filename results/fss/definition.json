@@ -1,0 +1,76 @@
+{
+  "case": "fss",
+  "layers": 5,
+  "N": 24,
+  "Q": 192,
+  "M": 1,
+  "display_frequency_GHz": [
+    5,
+    9
+  ],
+  "shared_model_sha256": "c1430e58420f54914e00583c9dfb14c3ca15e09481a251dbf9af3ccc2be5618a",
+  "relative_current_residual": 0.1,
+  "methods": [
+    "coupled",
+    "matched",
+    "projection",
+    "reciprocal",
+    "stationary"
+  ],
+  "matrix_reference": "S_matched is the exact-current M=1 layer cascade; S_coupled is the full coupled-EFIE reference.",
+  "response_matrix_axes": [
+    "frequency",
+    "outgoing port",
+    "incoming port"
+  ],
+  "fundamental_port_order": [
+    "front x",
+    "front y",
+    "rear x",
+    "rear y"
+  ],
+  "full36_port_order": "front18 then rear18; each side has n=-1,0,1 outer; m=-1,0,1 inner; x,y components adjacent.",
+  "GSM_blocks": [
+    [
+      "S11",
+      "S12"
+    ],
+    [
+      "S21",
+      "S22"
+    ]
+  ],
+  "layer_GSM_axes": [
+    "layer",
+    "outgoing port",
+    "incoming port"
+  ],
+  "layer_GSM_frequency_GHz": 6.973661202414444,
+  "column_error_percent": "100*abs(S_method[i,j]-S_reference[i,j])/sqrt(sum_i abs(S_reference[i,j])**2)",
+  "frequency_count": 500,
+  "table_statistic_frequency_count": 500,
+  "table_statistics": {
+    "projection": {
+      "median_relative_GSM_error": 0.03787315207197674,
+      "p95_relative_GSM_error": 0.16115700947709996
+    },
+    "reciprocal": {
+      "median_relative_GSM_error": 0.0373098250354859,
+      "p95_relative_GSM_error": 0.1550900191322915
+    },
+    "stationary": {
+      "median_relative_GSM_error": 0.0012908323382500317,
+      "p95_relative_GSM_error": 0.016045138574078754
+    }
+  },
+  "currents": "Coupled-stack rooftop coefficients, columns front x/front y/rear x/rear y; normalized eta0*Js for unit incident electric field, not isolated-layer library currents.",
+  "current_indexing": "row=component*N*N+iy*N+ix; component0=x/u,1=y/v; local basis support lies entirely on PEC.",
+  "time_convention": "exp(-i*omega*t)",
+  "units": {
+    "frequency": "GHz",
+    "geometry": "m unless field name specifies mm",
+    "power": "fraction of incident power",
+    "axial_ratio": "dB"
+  },
+  "stored_values": "Full saved precision; response.csv is derived directly from saved matrices."
+}

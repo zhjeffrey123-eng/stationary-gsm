@@ -1,0 +1,42 @@
+{
+  "architecture": [
+    71,
+    128,
+    128,
+    2
+  ],
+  "activation": "exact GELU: x*(1+erf(x/sqrt(2)))/2",
+  "parameter_dtype": "float32",
+  "weight_file": "current_model.npz",
+  "weight_sha256": "c1430e58420f54914e00583c9dfb14c3ca15e09481a251dbf9af3ccc2be5618a",
+  "weight_orientation": "out = W @ input + b; columns are examples",
+  "N": 24,
+  "Q": 192,
+  "M": 1,
+  "reference_period_m": 0.02,
+  "normal_incidence": true,
+  "output_scale": 6.027103424072266,
+  "input_features": [
+    "0:64: 8x8 binary mask rolled by (-anchor_y,-anchor_x), flattened in C row-major order; map 0 to -1 and 1 to +1",
+    "64: 2*((ix mod s)+0.5*(component==1))/s-1",
+    "65: 2*((iy mod s)+0.5*(component==0))/s-1",
+    "66: (canonical_frequency_GHz-7)/2",
+    "67: Floquet integer m",
+    "68: Floquet integer n",
+    "69: incident polarization label; Ex=-1, Ey=+1",
+    "70: current component label; x=-1, y=+1"
+  ],
+  "indexing": {
+    "row": "component*N*N + iy*N + ix",
+    "component": "0=x, 1=y",
+    "s": "N/8",
+    "anchor_x": "floor(ix/s)",
+    "anchor_y": "floor(iy/s)",
+    "x": "(ix+0.5*(component==1))/N",
+    "y": "(iy+0.5*(component==0))/N",
+    "single_face_port": "2*((n+1)*3+(m+1))+polarization; m changes fastest, polarization0=x,1=y"
+  },
+  "prediction": "For output o, eta0*Js coefficient = output_scale*(o[0]+i*o[1])*exp(i*2*pi*(m*x+n*y)); inactive metal basis coefficients are zero.",
+  "polarizer_similarity": "canonical_frequency_GHz = physical_frequency_GHz*period_m/0.02. Masks are expressed in principal u/v coordinates; translated modal excitations multiply each incident column by exp(i*q_mn dot shifts_ref_m). The u/v-to-lab matrix is in the geometry file.",
+  "same_weights_for_both_examples": true
+}
